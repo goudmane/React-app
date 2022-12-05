@@ -39,7 +39,6 @@ function Section2() {
 export default Section2;
  */
 import React, { Component } from "react";
-import Slider from "react-slick";
 /* import Flickity from 'flickity'; */
 
 import Flickity from "react-flickity-component";
