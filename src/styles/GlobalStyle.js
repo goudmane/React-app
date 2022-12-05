@@ -8,10 +8,17 @@ const GlobalStyle = createGlobalStyle`
         margin : 10pt 20pt;
     }
 
-    
+    .flickity-enabled.is-draggable {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        user-select: none;
+        width: 100vw;
+        left: -20px;
+    }
+
     .carousel-cell {
-        width: 172px;
-        height: 230px;
+        /* width: 172px;
+        height: 230px; */
         display: flex;
         align-content: space-around;
         flex-direction: row;
@@ -23,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
     .carousel-cell.is-selected {
-        height: 262px;
+        /* height: 262px; */
         /* width: 196px !important; */
         z-index: 50;
         margin-top: 0;
