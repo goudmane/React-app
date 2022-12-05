@@ -32,7 +32,7 @@ const Layout = ({ pageTitle, children }) => {
       {/* <header className={siteTitle}>{data.site.siteMetadata.title}</header> */}
       <header className={siteTitle} style={headerStyle}>
         <Icon name='Menu' />
-        <a href="/" className='logoTxt'>LOGO</a>
+        <div  className='logoTxt'>LOGO</div>
         <div className='d-flex'>
             <Icon name='Star' />
             <Icon name='QrCode' />
