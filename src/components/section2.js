@@ -18,9 +18,22 @@ export default class Section2 extends Component {
       slidesToShow: 3,
 
     };
+
+    const flickityOptions = {
+        freeScroll: true,
+        wrapAround: true
+    }
+
     return (
       <div>
-        <Flickity>
+        <Flickity
+            className={'carousel'} // default ''
+            elementType={'div'} // default 'div'
+            options={flickityOptions} // takes flickity options {}
+            disableImagesLoaded={false} // default false
+            reloadOnUpdate // default false
+            static // default false
+        >
           <img src="https://placeimg.com/640/480/animals" />
           <img src="https://placeimg.com/640/480/animals" />
         </Flickity>
