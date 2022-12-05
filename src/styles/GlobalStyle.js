@@ -8,16 +8,17 @@ const GlobalStyle = createGlobalStyle`
         margin : 10pt 20pt;
     }
 
-    .carousel-cell {
-        width: 33%;
-        height: 160px;
+
+    .carousel-cell .carousel-cell > img {
+        width: 172pt;
+        height: 230pt;
         margin-right: 10px;
       }
-    .carousel-cell.size-180 { width: 180px; }
-    .carousel-cell.size-large { width: 75%; }
 
-    .carousel-cell.is-selected {
+    .carousel-cell.is-selected .carousel-cell.is-selected>img{
         /* background: #ED2; */
+        width: 172pt !important;
+        height: 230pt;
     }
 `;
 
