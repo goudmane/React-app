@@ -8,14 +8,23 @@ const GlobalStyle = createGlobalStyle`
         margin : 10pt 20pt;
     }
 
-
-    .carousel-cell .carousel-cell > img {
+    .carousel-cell > img {
+        width: 172pt !important;
+        height: 230pt;
+    }
+    .carousel-cell {
         width: 172pt;
         height: 230pt;
         margin-right: 10px;
       }
 
-    .carousel-cell.is-selected .carousel-cell.is-selected>img{
+    .carousel-cell.is-selected {
+        /* background: #ED2; */
+        width: 172pt !important;
+        height: 230pt;
+    }
+
+    .carousel-cell.is-selected>img{
         /* background: #ED2; */
         width: 172pt !important;
         height: 230pt;
