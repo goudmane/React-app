@@ -43,7 +43,7 @@ import React, { Component } from "react";
 
 import Flickity from "react-flickity-component";
 
-import "../styles.css";
+/* import "../styles.css"; */
 import "flickity/css/flickity.css";
 export default class Section2 extends Component {
 
