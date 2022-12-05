@@ -6,9 +6,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-document.body.style.margin = "10pt 20pt";
+
+
 const IndexPage = () => {
   return (
     <>
@@ -18,7 +19,7 @@ const IndexPage = () => {
         alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
         src="../images/clifford.jpg"
       /> */}
-      
+
     </Layout>
     <Section1 pageTitle="Home Page"/>
     <Section2 />
