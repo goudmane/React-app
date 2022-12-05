@@ -6,8 +6,12 @@ import PrismStyles from './PrismStyles';
 
 const GlobalStyle = createGlobalStyle`
   ${fonts};
-    html, body, #react-app {
+    body {
         margin : 10pt 20pt;
+    }
+
+    .slick-slider {
+        margin:0 20pt;
     }
 `;
 
