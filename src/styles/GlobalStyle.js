@@ -4,15 +4,8 @@ import variables from './variables';
 
 const GlobalStyle = createGlobalStyle`
   ${fonts};
-  Copyglobal.css: copy code to clipboard
-    @font-face {
-        font-family: 'HelveticaNeue';
-        font-weight: 400;
-        font-display: swap;
-        font-style: normal;
-        font-named-instance: 'Regular';
-        src: url(../fonts/HelveticaNeue-Regular.ttf) format("ttf");
-    }
+
+
     body {
         margin : 10pt 20px;
     }
