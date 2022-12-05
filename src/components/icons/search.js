@@ -4,8 +4,8 @@ const IconSearch = () => (
 	<svg
 		clip-rule="evenodd"
 		fill-rule="evenodd"
-        height="48px"
-        width="48px"
+        height="20px"
+        width="20px"
 		stroke-linejoin="round"
 		stroke-miterlimit="2"
 		viewBox="0 0 24 24"

@@ -46,7 +46,7 @@ const Icon = ({ name }) => {
       return <IconPlayStore />;
     case 'Star':
       return <IconSearch />;
-    case 'Twitter':
+    case 'QrCode':
       return <IconQrCode />;
     case 'Menu':
       return <IconMenu />;
