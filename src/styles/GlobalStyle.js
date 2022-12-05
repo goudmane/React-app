@@ -8,22 +8,31 @@ const GlobalStyle = createGlobalStyle`
         margin : 10pt 20pt;
     }
 
-    .carousel-cell > img {
-        width: 172px !important;
-        height: 230px;
-    }
+    
     .carousel-cell {
         width: 172px;
         height: 230px;
-        margin-right: 10px;
+        display: flex;
+        align-content: space-around;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+        margin-top: 16px;
       }
 
     .carousel-cell.is-selected {
-        /* background: #ED2; */
-        width: 196px !important;
         height: 262px;
+        /* width: 196px !important; */
+        z-index: 50;
+        margin-top: 0;
     }
 
+    .carousel-cell > img {
+        width: 172px !important;
+        height: 100%;
+    }
     .carousel-cell.is-selected>img{
         /* background: #ED2; */
         width: 196px !important;
