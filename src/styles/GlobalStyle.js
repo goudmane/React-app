@@ -4,14 +4,27 @@ import variables from './variables';
 
 const GlobalStyle = createGlobalStyle`
   ${fonts};
+  Copyglobal.css: copy code to clipboard
+    @font-face {
+        font-family: 'HelveticaNeue';
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+        font-named-instance: 'Regular';
+        src: url(../fonts/HelveticaNeue-Regular.ttf) format("ttf");
+    }
     body {
-        margin : 10pt 20pt;
+        margin : 10pt 20px;
+    }
+
+    a.logoTxt {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: HelveticaNeue;
     }
 
     .flickity-enabled.is-draggable {
-        -webkit-tap-highlight-color: transparent;
-        -webkit-user-select: none;
-        user-select: none;
+
         width: 100vw;
         left: -20px;
     }
@@ -27,12 +40,13 @@ const GlobalStyle = createGlobalStyle`
     .carousel-cell.is-selected {
         z-index: 50;
         margin-top: 0;
-        width: 196px !important;
-        height: 262px;
+        /* width: 196px !important;
+        height: 262px; */
     }
 
     .carousel-cell > img {
-        height: 100%;
+        width: 172px !important;
+        height: 230px;
     }
     .carousel-cell.is-selected>img{
         /* background: #ED2; */

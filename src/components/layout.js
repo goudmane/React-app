@@ -32,11 +32,11 @@ const Layout = ({ pageTitle, children }) => {
       {/* <header className={siteTitle}>{data.site.siteMetadata.title}</header> */}
       <header className={siteTitle} style={headerStyle}>
         <Icon name='Menu' />
-        <span>LOGO</span>
-        <span>
+        <a href="/" className='logoTxt'>LOGO</a>
+        <div className='d-flex'>
             <Icon name='Star' />
-            <Icon name='Twitter' />
-        </span>
+            <Icon name='QrCode' />
+        </div>
       </header>
       {/* <nav>
         <ul className={navLinks}>
@@ -57,7 +57,7 @@ const Layout = ({ pageTitle, children }) => {
           </li>
         </ul>
       </nav> */}
-     
+
     </div>
   )
 }
