@@ -20,21 +20,23 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         z-index: 5;
         margin-top: 16px;
+        width: 172px !important;
+        height: 230px;
       }
 
     .carousel-cell.is-selected {
         z-index: 50;
         margin-top: 0;
+        width: 196px !important;
+        height: 262px;
     }
 
     .carousel-cell > img {
-        width: 172px !important;
-        height: 230px;
+        height: 100%;
     }
     .carousel-cell.is-selected>img{
         /* background: #ED2; */
-        width: 196px !important;
-        height: 262px;
+
     }
 `;
 
