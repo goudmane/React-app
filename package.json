@@ -27,9 +27,8 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
-    "flickity": "latest",
+    "flickity": "^2.2.1",
     "react-flickity-component": "^3.3.2",
-    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6"
   }
 }
