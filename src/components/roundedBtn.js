@@ -10,9 +10,9 @@ const BtnStyle = {
     height: '45px'
 
 }
-const RoundedBtn = (marginStyle,text) => (
+const RoundedBtn = (text) => (
   <div>
-    <div style={marginStyle}>
+    <div >
         <Button style={BtnStyle}>{text}</Button>
     </div>
   </div>
