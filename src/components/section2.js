@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
-import RoundedBtn from "./roundedBtn"
+import RoundedBtn from "./roundedBtn";
 
 export default class Section2 extends Component {
 
