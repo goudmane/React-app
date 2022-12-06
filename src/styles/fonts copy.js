@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import CalibreRegularWoff from '@fonts/Calibre/Calibre-Regular.woff';
+/* import CalibreRegularWoff from '@fonts/Calibre/Calibre-Regular.woff';
 import CalibreRegularWoff2 from '@fonts/Calibre/Calibre-Regular.woff2';
 import CalibreMediumWoff from '@fonts/Calibre/Calibre-Medium.woff';
 import CalibreMediumWoff2 from '@fonts/Calibre/Calibre-Medium.woff2';
@@ -12,22 +12,18 @@ import CalibreRegularItalicWoff2 from '@fonts/Calibre/Calibre-RegularItalic.woff
 import CalibreMediumItalicWoff from '@fonts/Calibre/Calibre-MediumItalic.woff';
 import CalibreMediumItalicWoff2 from '@fonts/Calibre/Calibre-MediumItalic.woff2';
 import CalibreSemiboldItalicWoff from '@fonts/Calibre/Calibre-SemiboldItalic.woff';
-import CalibreSemiboldItalicWoff2 from '@fonts/Calibre/Calibre-SemiboldItalic.woff2';
+import CalibreSemiboldItalicWoff2 from '@fonts/Calibre/Calibre-SemiboldItalic.woff2'; */
 
-import SFMonoRegularWoff from '@fonts/SFMono/SFMono-Regular.woff';
-import SFMonoRegularWoff2 from '@fonts/SFMono/SFMono-Regular.woff2';
+
+/* import SFMonoRegularWoff2 from '@fonts/SFMono/SFMono-Regular.woff2';
 import SFMonoSemiboldWoff from '@fonts/SFMono/SFMono-Semibold.woff';
 import SFMonoSemiboldWoff2 from '@fonts/SFMono/SFMono-Semibold.woff2';
 
 import SFMonoRegularItalicWoff from '@fonts/SFMono/SFMono-RegularItalic.woff';
 import SFMonoRegularItalicWoff2 from '@fonts/SFMono/SFMono-RegularItalic.woff2';
 import SFMonoSemiboldItalicWoff from '@fonts/SFMono/SFMono-SemiboldItalic.woff';
-import SFMonoSemiboldItalicWoff2 from '@fonts/SFMono/SFMono-SemiboldItalic.woff2';
-
-
-
-import HelveticaNeueRegularTtf from '@fonts/HelveticaNeue-Regular.ttf';
-
+import SFMonoSemiboldItalicWoff2 from '@fonts/SFMono/SFMono-SemiboldItalic.woff2'; */
+/*
 const calibreNormalWeights = {
   400: [CalibreRegularWoff, CalibreRegularWoff2],
   500: [CalibreMediumWoff, CalibreMediumWoff2],
@@ -48,58 +44,42 @@ const sfMonoNormalWeights = {
 const sfMonoItalicWeights = {
   400: [SFMonoRegularItalicWoff, SFMonoRegularItalicWoff2],
   600: [SFMonoSemiboldItalicWoff, SFMonoSemiboldItalicWoff2],
-};
+}; */
 
+/* import src from '@fonts/HelveticaNeue-Regular.ttf';
 const HelveticaNeueNormalWeights = {
   400: [HelveticaNeueRegularTtf],
 };
-const calibre = {
-  name: 'Calibre',
-  normal: calibreNormalWeights,
-  italic: calibreItalicWeights,
+const HelveticaNeue = {
+  name: 'Helvetica Neue',
+  normal: HelveticaNeueNormalWeights,
 };
-const sfMono = {
+ */
+/* const sfMono = {
   name: 'SF Mono',
   normal: sfMonoNormalWeights,
   italic: sfMonoItalicWeights,
-};
+}; */
 
-const HelveticaNeue = {
-  name: 'HelveticaNeue',
-  normal: HelveticaNeueNormalWeights,
-};
-const createFontFaces = (family, style = 'normal') => {
+const createFontFaces = () => {
   let styles = '';
 
-  for (const [weight, formats] of Object.entries(family[style])) {
-    const woff = formats[0];
-    const woff2 = formats[1];
-
-    styles += `
-      @font-face {
-        font-family: '${family.name}';
-        src: url(${woff2}) format('woff2'),
-            url(${woff}) format('woff');
-        font-weight: ${weight};
-        font-style: ${style};
-        font-display: auto;
-      }
-    `;
-  }
-
+  styles= `
+            @font-face {
+                font-family: 'HelveticaNeue';
+                src: url(../fonts/HelveticaNeue-Regular.ttf) format("truetype");
+            }
+        `
   return styles;
 };
-
+/*
 const calibreNormal = createFontFaces(calibre);
-const calibreItalic = createFontFaces(calibre, 'italic');
+const calibreItalic = createFontFaces(calibre, 'italic');const Fonts = css`
+  ${HelveticaNeueNormal + calibreItalic + sfMonoNormal + sfMonoItalic }
+//`;*/
 
-const sfMonoNormal = createFontFaces(sfMono);
-const sfMonoItalic = createFontFaces(sfMono, 'italic');
+const Fonts = createFontFaces();
 
 
-const HelveticaNeueNormal = createFontFaces(HelveticaNeue);
-const Fonts = css`
-  ${calibreNormal + calibreItalic + sfMonoNormal + sfMonoItalic + HelveticaNeueNormal}
-`;
 
 export default Fonts;
