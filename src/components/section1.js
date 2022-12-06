@@ -19,21 +19,11 @@ const Section1 = ({ title }) => {
         letterSpacing: '0.6px',
         textTransform: 'uppercase'
     }
-    /* const CategoryBtnStyle = {
-        background: 'transparent',
-        width: '33.33%',
+    const CategoryGpBtnStyle = {
+        backgroundColor: '#FAFAFA',
         borderRadius: '30px',
-
-        background: 'transparent',
-        width: '33.33%',
-        borderRadius: '30px !important',
-        border: 'unset',
-        color: '#909090',
-        fontSize: '14px',
-        fontFamily: 'Roboto,var(--bs-btn-font-family)',
-        lineHeight: '19px',
-        height: '45px'
-    } */
+        boxShadow: '#00000033 0px 1px 4px'
+    }
     const BtnStyle = {
         borderRadius: '30px',
         width: '100%',
@@ -58,7 +48,7 @@ const Section1 = ({ title }) => {
 
     return (
         <div id='section1'>
-            <ButtonGroup size="lg" className="mb-2 w-100">
+            <ButtonGroup size="lg" className="mb-2 w-100" style={CategoryGpBtnStyle}>
                 <Button className="BtnActive">Magasins</Button>
                 <Button className="">Restauration</Button>
                 <Button className="">Informations</Button>
@@ -81,7 +71,7 @@ const Section1 = ({ title }) => {
                 <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
                 <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
             </Flickity>
-            <div style={{margin: '35px 50px 50px 52px'}}>
+            <div style={{margin: '35px 50px 52px 50px;'}}>
                 <Button style={BtnStyle}>Voir tous les actualites</Button>
             </div>
 
