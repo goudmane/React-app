@@ -4,6 +4,9 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Image from 'react-bootstrap/Image'
 import { graphql, useStaticQuery } from 'gatsby'
 
+import Flickity from "react-flickity-component";
+import "flickity/css/flickity.css";
+
 const Section1 = ({ title }) => {
     const h3style={
         marginBottom:"49px",
