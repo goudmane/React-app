@@ -14,11 +14,9 @@ const Section1 = ({ title }) => {
         color: 'var(--main-bleu)',
 
         lineHeight: '39px',
-        marginBottom: '49pt',
-        marginTop: '47pt',
         textAlign: 'center',
         fontSize: '30pt',
-        letterSpacing: '0.6pt',
+        letterSpacing: '0.6px',
         textTransform: 'uppercase'
     }
     /* const CategoryBtnStyle = {
