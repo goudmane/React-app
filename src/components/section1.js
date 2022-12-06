@@ -50,12 +50,19 @@ const Section1 = ({ title }) => {
         wrapAround: true
     }
 
+
+    const [isActive, setIsActive] = useState(false);
+
+    const handleClick = event => {
+        // 👇️ toggle isActive state on click
+        setIsActive(current => !current);
+    };
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="mb-2 w-100" style={CategoryGpBtnStyle}>
-                <Button className="active">Magasins</Button>
-                <Button className="">Restauration</Button>
-                <Button className="">Informations</Button>
+                <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Magasins</Button>
+                <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Restauration</Button>
+                <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Informations</Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>

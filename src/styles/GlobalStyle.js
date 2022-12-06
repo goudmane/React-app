@@ -13,6 +13,11 @@ const GlobalStyle = createGlobalStyle`
     header svg {
         color: var(--main-bleu);
     }
+    .BtnActive{
+        background-color: var(--main-bleu);
+        border-color: var(--main-bleu);
+        color: var(--bs-btn-active-color);
+    }
     .btn-group>.btn{
         background: transparent;
         width: 33.33%;
