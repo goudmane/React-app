@@ -46,7 +46,7 @@ const sfMonoItalicWeights = {
   600: [SFMonoSemiboldItalicWoff, SFMonoSemiboldItalicWoff2],
 }; */
 
-import src from '@fonts/HelveticaNeue-Regular.ttf';
+/* import src from '@fonts/HelveticaNeue-Regular.ttf';
 const HelveticaNeueNormalWeights = {
   400: [HelveticaNeueRegularTtf],
 };
@@ -54,7 +54,7 @@ const HelveticaNeue = {
   name: 'Helvetica Neue',
   normal: HelveticaNeueNormalWeights,
 };
-
+ */
 /* const sfMono = {
   name: 'SF Mono',
   normal: sfMonoNormalWeights,
