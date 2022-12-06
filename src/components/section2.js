@@ -6,7 +6,9 @@ import "flickity/css/flickity.css";
 import RoundedBtn from "./roundedBtn";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-/*
+
+// eslint-disable-next-line
+import "swiper/css/bundle";
 // Import Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
@@ -15,7 +17,7 @@ import SwiperCore, {
     Pagination
   } from 'swiper/core';
 // install Swiper modules
-SwiperCore.use([Pagination]); */
+SwiperCore.use([Pagination]);
 export default class Section2 extends Component {
 
   render() {
