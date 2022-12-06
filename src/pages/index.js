@@ -7,7 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import { GlobalStyle, theme } from '@styles';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 /* import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; */
 
@@ -30,7 +30,7 @@ const IndexPage = () => {
     </>
   )
 }
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 export const Head = () => <Seo title="Home Page" />
 
 export default IndexPage

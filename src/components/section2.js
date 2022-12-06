@@ -45,7 +45,7 @@ export default class Section2 extends Component {
 
     return (
       <div id="section2">
-        <h3 style={h3style}>THE PLACE TO BE</h3>
+        <h3 style={h3style}>ÉVÉNEMENTS TENDANCE</h3>
         {/* <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'
