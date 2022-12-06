@@ -46,7 +46,7 @@ const sfMonoItalicWeights = {
   600: [SFMonoSemiboldItalicWoff, SFMonoSemiboldItalicWoff2],
 }; */
 
-import HelveticaNeueRegularTtf from '@fonts/HelveticaNeue-Regular.ttf';
+import src from '@fonts/HelveticaNeue-Regular.ttf';
 const HelveticaNeueNormalWeights = {
   400: [HelveticaNeueRegularTtf],
 };
@@ -67,7 +67,7 @@ const createFontFaces = () => {
   styles= `
             @font-face {
                 font-family: 'HelveticaNeue';
-                src: url(@fonts/HelveticaNeue-Regular.ttf) format("truetype");
+                src: url(../fonts/HelveticaNeue-Regular.ttf) format("truetype");
             }
         `
   return styles;

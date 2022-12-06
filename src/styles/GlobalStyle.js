@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin : 10pt 20px;
     }
-    .BtnActive{
+    .btn-group>.btn{
         background: transparent;
         width: 33.33%;
         border-radius: 30px !important;
