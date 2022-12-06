@@ -42,11 +42,7 @@ export default class Section2 extends Component {
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'
             options={flickityOptions} // takes flickity options {}
-            disableImagesLoaded={false} // default false
-            reloadOnUpdate // default false
-            static // default false
-            selectedAttraction= '0.2'
-            friction= '0.8'
+
         >
             <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
             <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>

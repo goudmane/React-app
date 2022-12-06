@@ -11,17 +11,17 @@ import "flickity/css/flickity.css";
 
 const Section1 = ({ title }) => {
     const h3style = {
-        marginBottom: "49px",
-        marginTop: "47px",
+        marginBottom: "53px",
+        marginTop: "42px",
         color: 'var(--main-bleu)',
 
-        lineHeight: '39px',
+        lineHeight: '33px',
         textAlign: 'center',
-        fontSize: '30px',
-        letterSpacing: '0.6px',
+        fontSize: '25px',
+        letterSpacing: '0.5px',
         textTransform: 'uppercase'
     }
-    const CategoryGpBtnStyle = {
+    const QUESTGpBtnStyle = {
         backgroundColor: '#FAFAFA',
         borderRadius: '30px',
         boxShadow: '#00000033 0px 1px 4px'
@@ -50,17 +50,12 @@ const Section1 = ({ title }) => {
 
     return (
         <div id='section1'>
-            <ButtonGroup size="lg" className="mb-2 w-100" style={CategoryGpBtnStyle}>
-                <Button className="BtnActive">Magasins</Button>
-                <Button className="">Restauration</Button>
-                <Button className="">Informations</Button>
-            </ButtonGroup>
 
-            <h3 style={h3style}>THE PLACE TO BE</h3>
+            <h3 style={h3style}>QUESTIONNAIRES</h3>
 
 
             <Flickity
-                className={'category-carousel'} // default ''
+                className={'QUEST-carousel'} // default ''
                 elementType={'div'} // default 'div'
                 options={flickityOptions} // takes flickity options {}
                 disableImagesLoaded={false} // default false
@@ -69,9 +64,9 @@ const Section1 = ({ title }) => {
                 selectedAttraction='0.2'
                 friction='0.8'
             >
-                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
+                <div class="QUEST-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
+                <div class="QUEST-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
+                <div class="QUEST-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
             </Flickity>
 
 
