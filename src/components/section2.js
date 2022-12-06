@@ -62,15 +62,15 @@ export default class Section2 extends Component {
                 loop= {true}
                 spaceBetween={30}
                 className="mySwiper">
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
             </Swiper>
 
         <RoundedBtn marginStyle={{margin: '50px 50px 42px 50px;'}} text="Voir tous les événements" />
