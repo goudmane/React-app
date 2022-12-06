@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
-
+import RoundedBtn from "./roundedBtn"
 
 export default class Section2 extends Component {
 
@@ -18,6 +18,17 @@ export default class Section2 extends Component {
       slidesToShow: 3,
 
     };
+    const h3style = {
+        marginBottom: "49px",
+        marginTop: "52px",
+        color: 'var(--main-bleu)',
+
+        lineHeight: '33px',
+        textAlign: 'center',
+        fontSize: '25px',
+        letterSpacing: '0.5px',
+        textTransform: 'uppercase'
+    }
 
     const flickityOptions = {
         freeScroll: true,
@@ -26,6 +37,7 @@ export default class Section2 extends Component {
 
     return (
       <div id="section2">
+        <h3 style={h3style}>THE PLACE TO BE</h3>
         <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'
@@ -42,6 +54,8 @@ export default class Section2 extends Component {
             <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
             <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
         </Flickity>
+
+        <RoundedBtn marginStyle="{margin: '35px 50px 52px 50px;'}" text="Voir tous les événements" />
       </div>
     );
   }
