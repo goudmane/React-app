@@ -2,6 +2,11 @@ import { css } from 'styled-components';
 
 const variables = css`
   :root {
+
+    /* ############# */
+    --textGris:#909090;
+    --main-bleu:#303189;
+    /* ############# */
     --dark-navy: #020c1b;
     --navy: #0a192f;
     --light-navy: #112240;

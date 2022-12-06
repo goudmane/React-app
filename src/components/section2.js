@@ -25,7 +25,7 @@ export default class Section2 extends Component {
     }
 
     return (
-      <div>
+      <div id="section2">
         <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'
