@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Section1 from '@components/section1'
 import Section2 from '@components/section2'
+import Section2 from '@components/section3'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import { GlobalStyle, theme } from '@styles';
