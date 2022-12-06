@@ -33,7 +33,9 @@ export default class Section2 extends Component {
         textAlign: 'center',
         fontSize: '25px',
         letterSpacing: '0.5px',
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        fontFamily: '\'Roboto\'',
+        fontWeight: '900'
     }
 
     const flickityOptions = {

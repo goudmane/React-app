@@ -19,7 +19,9 @@ const Section1 = ({ title }) => {
         textAlign: 'center',
         fontSize: '25px',
         letterSpacing: '0.5px',
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        fontFamily: '\'Roboto\'',
+        fontWeight: '900'
     }
     const QUESTGpBtnStyle = {
         backgroundColor: '#FAFAFA',
