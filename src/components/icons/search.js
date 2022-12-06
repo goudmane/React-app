@@ -2,8 +2,7 @@ import React from "react";
 
 const IconSearch = () => (
 	<svg
-		clip-rule="evenodd"
-		fill-rule="evenodd"
+        fill="currentColor"
         height="20px"
         width="20px"
 		stroke-linejoin="round"

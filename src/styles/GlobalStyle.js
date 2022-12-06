@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin : 10pt 20px;
     }
+    header svg {
+        color: var(--main-bleu);
+    }
     .btn-group>.btn{
         background: transparent;
         width: 33.33%;
@@ -22,9 +25,9 @@ const GlobalStyle = createGlobalStyle`
         height: 45px;
     }
     .BtnActive:hover,.BtnActive:active{
-        background-color: var(--main-bleu);
-        border-color: var(--main-bleu);
-        color: var(--bs-btn-active-color);
+        background-color: var(--main-bleu)!important;
+        border-color: var(--main-bleu)!important;
+        color: var(--bs-btn-active-color)!important;
     }
     .logoTxt {
         font-size: 30px;
