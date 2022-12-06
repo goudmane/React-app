@@ -7,7 +7,10 @@ const BtnStyle = {
     borderRadius: '30px',
     width: '100%',
     background: 'var(--main-bleu)',
-    height: '45px'
+    height: '45px',
+    fontFamily: '\'Roboto\'',
+    fontWeight: '500'
+
 
 }
 const RoundedBtn = ({marginStyle,text}) => (

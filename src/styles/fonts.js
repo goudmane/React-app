@@ -7,10 +7,10 @@ import HelveticaNeueRegularTtf from '@fonts/HelveticaNeue-Regular.ttf';
 const HelveticaNeueNormalWeights = {
     400: [HelveticaNeueRegularTtf],
 };
-import RbRegularTtf from '@fonts/HelveticaNeue-Regular.ttf';
-import RbMediumTtf from '@fonts/HelveticaNeue-Regular.ttf';
-import RbBoldTtf from '@fonts/HelveticaNeue-Regular.ttf';
-import RbBlackTtf from '@fonts/HelveticaNeue-Regular.ttf';
+import RbRegularTtf from '@fonts/Roboto/Roboto-Regular.ttf';
+import RbMediumTtf from '@fonts/Roboto/Roboto-Medium.ttf';
+import RbBoldTtf from '@fonts/Roboto/Roboto-Bold.ttf';
+import RbBlackTtf from '@fonts/Roboto/Roboto-Black.ttf';
 
 
 const RbNormalWeights = {
