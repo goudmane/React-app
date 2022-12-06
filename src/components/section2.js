@@ -54,8 +54,8 @@ export default class Section2 extends Component {
             <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
             <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
         </Flickity>
-{/* {{margin: '50px 50px 42px 50px;'}} */}
-        <RoundedBtn  text="Voir tous les événements" />
+
+        <RoundedBtn marginStyle={{margin: '50px 50px 42px 50px;'}} text="Voir tous les événements" />
       </div>
     );
   }
