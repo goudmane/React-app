@@ -20,33 +20,7 @@ const RbNormalWeights = {
     900: [RbBlackTtf],
 };
 
-const calibreItalicWeights = {
-  400: [CalibreRegularItalicWoff, CalibreRegularItalicWoff2],
-  500: [CalibreMediumItalicWoff, CalibreMediumItalicWoff2],
-  600: [CalibreSemiboldItalicWoff, CalibreSemiboldItalicWoff2],
-};
 
-const sfMonoNormalWeights = {
-  400: [SFMonoRegularWoff, SFMonoRegularWoff2],
-  600: [SFMonoSemiboldWoff, SFMonoSemiboldWoff2],
-};
-
-const sfMonoItalicWeights = {
-  400: [SFMonoRegularItalicWoff, SFMonoRegularItalicWoff2],
-  600: [SFMonoSemiboldItalicWoff, SFMonoSemiboldItalicWoff2],
-};
-
-
-const calibre = {
-  name: 'Calibre',
-  normal: calibreNormalWeights,
-  italic: calibreItalicWeights,
-};
-const sfMono = {
-  name: 'SF Mono',
-  normal: sfMonoNormalWeights,
-  italic: sfMonoItalicWeights,
-};
 
 const roboto = {
     name: 'Roboto',
@@ -78,17 +52,13 @@ const createFontFaces = (family, style = 'normal') => {
   return styles;
 };
 
-const calibreNormal = createFontFaces(calibre);
-const calibreItalic = createFontFaces(calibre, 'italic');
-
-const sfMonoNormal = createFontFaces(sfMono);
-const sfMonoItalic = createFontFaces(sfMono, 'italic');
-
 
 const HelveticaNeueNormal = createFontFaces(HelveticaNeue);
 const RobotoNormal = createFontFaces(roboto);
+
+
 const Fonts = css`
-  ${calibreNormal + calibreItalic + sfMonoNormal + sfMonoItalic + HelveticaNeueNormal+ RobotoNormal}
+  ${HelveticaNeueNormal+ RobotoNormal}
 `;
 
 export default Fonts;
