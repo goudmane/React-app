@@ -19,7 +19,9 @@ const Section1 = ({ title }) => {
         textAlign: 'center',
         fontSize: '30px',
         letterSpacing: '0.6px',
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        fontFamily: '\'Roboto\'',
+        fontWeight: '900'
     }
     const CategoryGpBtnStyle = {
         backgroundColor: '#FAFAFA',
@@ -51,7 +53,7 @@ const Section1 = ({ title }) => {
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="mb-2 w-100" style={CategoryGpBtnStyle}>
-                <Button className="BtnActive">Magasins</Button>
+                <Button className="active">Magasins</Button>
                 <Button className="">Restauration</Button>
                 <Button className="">Informations</Button>
             </ButtonGroup>

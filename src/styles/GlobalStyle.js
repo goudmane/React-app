@@ -79,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
     .category-carousel-cell > img {
         height: 300px;
         width: 100%;
-        border
+        border-radius: 5px !important;
     }
     .category-carousel-cell.is-selected>img{
         /* background: #ED2; */
@@ -88,10 +88,14 @@ const GlobalStyle = createGlobalStyle`
     .QUEST-carousel-cell {
         height: 300px;
         width: 100%;
-        border-radius: 5px !important;
+
     }
 
-
+    .QUEST-carousel-cell > img {
+        height: 300px;
+        width: 100%;
+        border-radius: 5px !important;
+    }
     /* position dots up a bit */
     #section1.flickity-page-dots {
         bottom: -22px;
@@ -135,19 +139,22 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 5px !important;
       }
 
       .swiper-slide {
         width: 172px !important;
         height: 230px;
         margin-top: 16px;
-        border-radius: 5px !important;
+
       }
       .swiper-slide.swiper-slide-active {
         margin-top: 0;
         width: 196px !important;
         height: 262px;
       }
+
+
 `;
 
 export default GlobalStyle;
