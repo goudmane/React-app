@@ -24,14 +24,14 @@ const GlobalStyle = createGlobalStyle`
         line-height: 19px;
         height: 45px;
     }
-    .BtnActive:hover,.BtnActive:active{
+    .btn-group > .btn:hover,.btn-group > .btn:active{
         background-color: var(--main-bleu)!important;
         border-color: var(--main-bleu)!important;
         color: var(--bs-btn-active-color)!important;
     }
     .logoTxt {
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 700;
         font-family: HelveticaNeue;
     }
 
@@ -85,6 +85,11 @@ const GlobalStyle = createGlobalStyle`
         /* background: #ED2; */
 
     }
+    .QUEST-carousel-cell {
+        height: 300px;
+        width: 100%;
+        border-radius: 5px !important;
+    }
 
 
     /* position dots up a bit */
@@ -100,8 +105,9 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .swiper {
-        width: 100%;
+        width: 100vw;
         height: 100%;
+        left: -20px;
       }
 
       .swiper-slide {
@@ -134,6 +140,8 @@ const GlobalStyle = createGlobalStyle`
       .swiper-slide {
         width: 172px !important;
         height: 230px;
+        margin-top: 16px;
+        border-radius: 5px !important;
       }
       .swiper-slide.swiper-slide-active {
         margin-top: 0;
