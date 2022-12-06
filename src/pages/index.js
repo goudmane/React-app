@@ -4,6 +4,7 @@ import Section1 from '@components/section1'
 import Section2 from '@components/section2'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
+import { GlobalStyle, theme } from '@styles';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 /* import "slick-carousel/slick/slick.css";
@@ -13,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css"; */
 const IndexPage = () => {
   return (
     <>
+    <GlobalStyle />
     <Layout pageTitle="Home Page">
       {/* <p>I'm making this by following the Gatsby Tutorial.</p>
       <StaticImage

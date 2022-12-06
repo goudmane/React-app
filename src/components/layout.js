@@ -9,7 +9,7 @@ import {
   siteTitle,
 } from './layout.module.css'
 import { Icon } from '@components/icons';
-import { GlobalStyle, theme } from '@styles';
+
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -28,7 +28,7 @@ const Layout = ({ pageTitle, children }) => {
   }
   return (
     <div className={container}>
-        <GlobalStyle />
+
       {/* <header className={siteTitle}>{data.site.siteMetadata.title}</header> */}
       <header className={siteTitle} style={headerStyle}>
         <Icon name='Menu' />

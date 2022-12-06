@@ -67,7 +67,7 @@ const createFontFaces = () => {
   styles= `
             @font-face {
                 font-family: 'HelveticaNeue';
-                src: url(./src/fonts/HelveticaNeue-Regular.ttf) format("truetype");
+                src: url(../fonts/HelveticaNeue-Regular.ttf) format("truetype");
             }
         `
   return styles;
