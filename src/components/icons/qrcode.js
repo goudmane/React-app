@@ -3,7 +3,8 @@ import React from 'react';
 
 const styleElm ={
         width : "48px",
-        height : "48px"
+        height : "48px",
+        padding : "8px"
     }
 const IconQrCode = () => (
 
