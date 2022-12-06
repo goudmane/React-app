@@ -7,17 +7,10 @@ import RoundedBtn from "./roundedBtn";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// eslint-disable-next-line
-import "swiper/css/bundle";
 // Import Swiper styles
-import "swiper/swiper.min.css";
-import "swiper/components/pagination/pagination.min.css"
-// import Swiper core and required modules
-import SwiperCore, {
-    Pagination
-  } from 'swiper/core';
-// install Swiper modules
-SwiperCore.use([Pagination]);
+import 'swiper/css';
+
+
 export default class Section2 extends Component {
 
   render() {
@@ -68,7 +61,6 @@ export default class Section2 extends Component {
                 centeredSlides={true}
                 loop= {true}
                 spaceBetween={30}
-                pagination={{"clickable": true}}
                 className="mySwiper">
                 <SwiperSlide>Slide 1</SwiperSlide>
                 <SwiperSlide>Slide 2</SwiperSlide>
