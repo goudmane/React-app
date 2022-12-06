@@ -33,7 +33,7 @@ const Layout = ({ pageTitle, children }) => {
       <header className={siteTitle} style={headerStyle}>
         <Icon name='Menu' />
         <div  className='logoTxt'>LOGO</div>
-        <div className='d-flex' style={"alignItems: 'center'"}>
+        <div className='d-flex' style={{alignItems: 'center'}}>
             <Icon name='Star' />
             <Icon name='QrCode' />
         </div>
