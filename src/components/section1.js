@@ -8,10 +8,10 @@ import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
 
 const Section1 = ({ title }) => {
-    const h3style={
-        marginBottom:"49px",
+    const h3style = {
+        marginBottom: "49px",
         marginTop: "47px",
-        color : 'var(--main-bleu)',
+        color: 'var(--main-bleu)',
 
         lineHeight: '39px',
         marginBottom: '49pt',
@@ -21,7 +21,7 @@ const Section1 = ({ title }) => {
         letterSpacing: '0.6pt',
         textTransform: 'uppercase'
     }
-    const CategoryBtnStyle={
+    const CategoryBtnStyle = {
         background: 'transparent',
         width: '33.33%',
         borderRadius: '30px',
@@ -36,12 +36,12 @@ const Section1 = ({ title }) => {
         lineHeight: '19px',
         height: '45px'
     }
-    const BtnStyle={
-        marginBottom:"49px",
+    const BtnStyle = {
+        marginBottom: "49px",
         marginTop: "47px",
 
     }
-  const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -51,38 +51,40 @@ const Section1 = ({ title }) => {
     }
   `)
 
-  return (
-    <div id='section1'>
-      <ButtonGroup size="lg" className="mb-2 w-100">
-        <Button style={CategoryBtnStyle} className="BtnActive">Magasins</Button>
-        <Button style={CategoryBtnStyle} className="">Restauration</Button>
-        <Button style={CategoryBtnStyle} className="">Informations</Button>
-      </ButtonGroup>
+    const flickityOptions = {
+        freeScroll: true,
+        wrapAround: true
+    }
 
-      <h3 style={h3style}>THE PLACE TO BE</h3>
+    return (
+        <div id='section1'>
+            <ButtonGroup size="lg" className="mb-2 w-100">
+                <Button style={CategoryBtnStyle} className="BtnActive">Magasins</Button>
+                <Button style={CategoryBtnStyle} className="">Restauration</Button>
+                <Button style={CategoryBtnStyle} className="">Informations</Button>
+            </ButtonGroup>
 
-      {/* <div>
-        <Image src='https://media.geeksforgeeks.org/wp-content/uploads/20210425000233/test-300x297.png' rounded />
-      </div> */}
+            <h3 style={h3style}>THE PLACE TO BE</h3>
 
-        <Flickity
-            className={'category-carousel'} // default ''
-            elementType={'div'} // default 'div'
-            options={flickityOptions} // takes flickity options {}
-            disableImagesLoaded={false} // default false
-            reloadOnUpdate // default false
-            static // default false
-            selectedAttraction= '0.2'
-            friction= '0.8'
-        >
-            <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-            <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-            <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-         </Flickity>
 
-      <Button>Voir tous les actualites</Button>
-    </div>
-  )
+            <Flickity
+                className={'category-carousel'} // default ''
+                elementType={'div'} // default 'div'
+                options={flickityOptions} // takes flickity options {}
+                disableImagesLoaded={false} // default false
+                reloadOnUpdate // default false
+                static // default false
+                selectedAttraction='0.2'
+                friction='0.8'
+            >
+                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
+                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
+                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
+            </Flickity>
+
+            <Button>Voir tous les actualites</Button>
+        </div>
+    )
 }
 
 export default Section1
