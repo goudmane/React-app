@@ -3,19 +3,30 @@ import fonts from './fonts';
 import variables from './variables';
 
 const GlobalStyle = createGlobalStyle`
-  ${fonts};
 
+    ${variables};
+    ${fonts};
 
     body {
         margin : 10pt 20px;
     }
-
-    BtnActive:hover,BtnActive:active{
+    .BtnActive{
+        background: transparent;
+        width: 33.33%;
+        border-radius: 30px !important;
+        border: unset;
+        color: #909090;
+        font-size: 14px;
+        font-family: Roboto,var(--bs-btn-font-family);
+        line-height: 19px;
+        height: 45px;
+    }
+    .BtnActive:hover,.BtnActive:active{
         background-color: var(--main-bleu);
         border-color: var(--main-bleu);
         color: var(--bs-btn-active-color);
     }
-    a.logoTxt {
+    .logoTxt {
         font-size: 30px;
         font-weight: 400;
         font-family: HelveticaNeue;

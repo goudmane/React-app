@@ -67,11 +67,7 @@ const createFontFaces = () => {
   styles= `
             @font-face {
                 font-family: 'HelveticaNeue';
-                font-weight: 400;
-                font-display: swap;
-                font-style: normal;
-                font-named-instance: 'Regular';
-                src: url(../fonts/HelveticaNeue-Regular.ttf) format("ttf");
+                src: url(@fonts/HelveticaNeue-Regular.ttf) format("truetype");
             }
         `
   return styles;
@@ -82,7 +78,7 @@ const calibreItalic = createFontFaces(calibre, 'italic');const Fonts = css`
   ${HelveticaNeueNormal + calibreItalic + sfMonoNormal + sfMonoItalic }
 //`;*/
 
-const Fonts = createFontFaces(HelveticaNeue);
+const Fonts = createFontFaces();
 
 
 

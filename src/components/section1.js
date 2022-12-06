@@ -21,7 +21,7 @@ const Section1 = ({ title }) => {
         letterSpacing: '0.6pt',
         textTransform: 'uppercase'
     }
-    const CategoryBtnStyle = {
+    /* const CategoryBtnStyle = {
         background: 'transparent',
         width: '33.33%',
         borderRadius: '30px',
@@ -35,7 +35,7 @@ const Section1 = ({ title }) => {
         fontFamily: 'Roboto,var(--bs-btn-font-family)',
         lineHeight: '19px',
         height: '45px'
-    }
+    } */
     const BtnStyle = {
         marginBottom: "49px",
         marginTop: "47px",
@@ -59,9 +59,9 @@ const Section1 = ({ title }) => {
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="mb-2 w-100">
-                <Button style={CategoryBtnStyle} className="BtnActive">Magasins</Button>
-                <Button style={CategoryBtnStyle} className="">Restauration</Button>
-                <Button style={CategoryBtnStyle} className="">Informations</Button>
+                <Button className="BtnActive">Magasins</Button>
+                <Button className="">Restauration</Button>
+                <Button className="">Informations</Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
