@@ -132,7 +132,13 @@ const GlobalStyle = createGlobalStyle`
       }
 
       .swiper-slide {
-        width: 33.33%;
+        width: 172px !important;
+        height: 230px;
+      }
+      .swiper-slide.swiper-slide-active {
+        margin-top: 0;
+        width: 196px !important;
+        height: 262px;
       }
 `;
 
