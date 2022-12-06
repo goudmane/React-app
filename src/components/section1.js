@@ -35,8 +35,10 @@ const Section1 = ({ title }) => {
         height: '45px'
     } */
     const BtnStyle = {
-        marginBottom: "49px",
-        marginTop: "47px",
+        borderRadius: '30px',
+        width: '100%',
+        background: 'var(--main-bleu)',
+        height: '45px'
 
     }
     const data = useStaticQuery(graphql`
@@ -79,8 +81,10 @@ const Section1 = ({ title }) => {
                 <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
                 <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
             </Flickity>
+            <div style={{margin: '35px 50px 50px 52px'}}>
+                <Button style={BtnStyle}>Voir tous les actualites</Button>
+            </div>
 
-            <Button>Voir tous les actualites</Button>
         </div>
     )
 }

@@ -65,9 +65,13 @@ const GlobalStyle = createGlobalStyle`
 
     }
 
+    .category-carousel.flickity-enabled.is-draggable {
+        margin-bottom: 35px;
+    }
     .category-carousel-cell {
         height: 300px;
         width: 100%;
+        border-radius: 5px !important;
     }
 
     .category-carousel-cell.is-selected {
@@ -77,6 +81,7 @@ const GlobalStyle = createGlobalStyle`
     .category-carousel-cell > img {
         height: 300px;
         width: 100%;
+        border
     }
     .category-carousel-cell.is-selected>img{
         /* background: #ED2; */
