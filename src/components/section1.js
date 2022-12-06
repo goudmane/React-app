@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Image from 'react-bootstrap/Image'
 
+import {useState} from 'react';
+
 import RoundedBtn from "./roundedBtn";
 import { graphql, useStaticQuery } from 'gatsby'
 
