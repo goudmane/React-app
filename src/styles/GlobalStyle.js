@@ -115,12 +115,13 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         border-radius: 0;
     }
-
+    /* //width: 100vw; */
     .swiper {
-        max-width: 500px;
-        width: 100vw;
+        width: 100%;
         height: 100%;
-        left: -20px;
+        max-width: 500px;
+        margin: auto;
+        overflow: visible;
 
       }
 
