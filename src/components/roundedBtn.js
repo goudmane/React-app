@@ -10,7 +10,7 @@ const BtnStyle = {
     height: '45px'
 
 }
-const RoundedBtn = (text) => (
+const RoundedBtn = ({text}) => (
   <div>
     <div >
         <Button style={BtnStyle}>{text}</Button>
