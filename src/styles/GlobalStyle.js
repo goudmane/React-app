@@ -39,7 +39,10 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 700;
         font-family: HelveticaNeue;
     }
-
+    #section1,#section2,#section3 {
+        margin: auto;
+        max-width: 500px;
+    }
     #section2.flickity-enabled.is-draggable {
 
         width: 100vw;
@@ -114,9 +117,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .swiper {
+        max-width: 500px;
         width: 100vw;
         height: 100%;
         left: -20px;
+
       }
 
       .swiper-slide {
