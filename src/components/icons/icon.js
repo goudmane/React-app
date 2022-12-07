@@ -50,6 +50,18 @@ const Icon = ({ name }) => {
       return <IconQrCode />;
     case 'Menu':
       return <IconMenu />;
+    case 'Info':
+      return <IconInformation />;
+    case 'Magasin':
+      return <IconMagasin />;
+    case 'Restaurant':
+      return <IconRestaurant />;
+    case 'Home':
+      return <IconHome />;
+    case 'Car':
+        return <IconCar />;
+    case 'User':
+        return <IconUser />;
     default:
       return <IconExternal />;
   }
