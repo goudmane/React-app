@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     ${fonts};
 
     body {
-        margin: -9pt 20px;
+        margin: 0px 20px;
 
     }
     header svg {
@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
     .logoTxt {
         font-size: 30px;
         font-weight: 700;
-        font-family: HelveticaNeue;
+        font-family: sans-serif,HelveticaNeue;
         margin-left: 48px;
     }
     #section1,#section2,#section3 {
@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
         max-width: 500px;
     }
     #section1 {
-        margin-top: 18px;
+        margin-top: 30px;
     }
     #section2.flickity-enabled.is-draggable {
 
@@ -171,6 +171,9 @@ const GlobalStyle = createGlobalStyle`
       }
 
 
+      .footerMenuBtn{
+
+      }
 `;
 
 export default GlobalStyle;
