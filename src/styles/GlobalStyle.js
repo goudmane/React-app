@@ -35,13 +35,17 @@ const GlobalStyle = createGlobalStyle`
         color: var(--bs-btn-active-color)!important;
     }
     .logoTxt {
-        font-size: 30px;
-        font-weight: 700;
-        font-family: HelveticaNeue;
+        fontSize: '30px',
+        fontWeight: '700',
+        fontFamily: 'HelveticaNeue',
+        marginLeft: '48px'
     }
     #section1,#section2,#section3 {
         margin: auto;
         max-width: 500px;
+    }
+    #section1 {
+        margin-top: 30px;
     }
     #section2.flickity-enabled.is-draggable {
 

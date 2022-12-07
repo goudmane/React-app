@@ -25,17 +25,17 @@ export default class Section2 extends Component {
 
     };
     const h3style = {
-        marginBottom: "49px",
-        marginTop: "52px",
+        marginBottom: '53px',
+        marginTop: '42px',
         color: 'var(--main-bleu)',
-
         lineHeight: '33px',
         textAlign: 'center',
         fontSize: '25px',
-        letterSpacing: '0.5px',
+        letterSpacing: '1.8px',
         textTransform: 'uppercase',
         fontFamily: '\'Roboto\'',
-        fontWeight: '900'
+        fontWeight: '900',
+        marginLeft: '20px'
     }
 
     const flickityOptions = {
@@ -62,7 +62,7 @@ export default class Section2 extends Component {
                 slidesPerView={"auto"}
                 centeredSlides={true}
                 loop= {true}
-                spaceBetween={30}
+                spaceBetween={20}
                 className="mySwiper">
                 <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
                 <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>

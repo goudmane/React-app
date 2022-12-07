@@ -9,7 +9,11 @@ const BtnStyle = {
     background: 'var(--main-bleu)',
     height: '45px',
     fontFamily: '\'Roboto\'',
-    fontWeight: '500'
+    fontWeight: '400',
+    fontSize: '18px',
+    textAlign: 'center',
+    letterSpacing: '0.9px',
+    wordSpacing: '-3px'
 
 
 }

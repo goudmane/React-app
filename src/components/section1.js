@@ -13,17 +13,17 @@ import "flickity/css/flickity.css";
 
 const Section1 = ({ title }) => {
     const h3style = {
-        marginBottom: "49px",
-        marginTop: "47px",
+        marginBottom: '49px',
+        marginTop: '49px',
         color: 'var(--main-bleu)',
-
         lineHeight: '39px',
-        textAlign: 'center',
         fontSize: '30px',
-        letterSpacing: '0.6px',
+        letterSpacing: '1.4px',
         textTransform: 'uppercase',
         fontFamily: '\'Roboto\'',
-        fontWeight: '900'
+        fontWeight: '900',
+        textAlign: 'center',
+        marginLeft: '14.6px'
     }
     const CategoryGpBtnStyle = {
         backgroundColor: '#FAFAFA',
@@ -61,7 +61,7 @@ const Section1 = ({ title }) => {
     };
     return (
         <div id='section1'>
-            <ButtonGroup size="lg" className="mb-2 w-100" style={CategoryGpBtnStyle}>
+            <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
                 <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Magasins</Button>
                 <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Restauration</Button>
                 <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Informations</Button>
