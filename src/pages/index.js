@@ -33,7 +33,6 @@ const IndexPage = () => {
   )
 }
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Footer } from 'react-bootstrap/lib/Modal'
 export const Head = () => <Seo title="Home Page" />
 
 export default IndexPage
