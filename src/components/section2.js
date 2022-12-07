@@ -25,7 +25,7 @@ export default class Section2 extends Component {
 
     };
     const h3style = {
-        marginBottom: '53px',
+        marginBottom: '50px',
         marginTop: '42px',
         color: 'var(--main-bleu)',
         lineHeight: '33px',

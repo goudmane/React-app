@@ -18,10 +18,11 @@ const Section1 = ({ title }) => {
         lineHeight: '33px',
         textAlign: 'center',
         fontSize: '25px',
-        letterSpacing: '0.5px',
+        letterSpacing: '1.8px',
         textTransform: 'uppercase',
         fontFamily: '\'Roboto\'',
-        fontWeight: '900'
+        fontWeight: '900',
+        marginLeft: '20px'
     }
     const QUESTGpBtnStyle = {
         backgroundColor: '#FAFAFA',
@@ -51,7 +52,7 @@ const Section1 = ({ title }) => {
     }
 
     return (
-        <div id='section1'>
+        <div id='section3'>
 
             <h3 style={h3style}>QUESTIONNAIRES</h3>
 
@@ -73,7 +74,6 @@ const Section1 = ({ title }) => {
 
 
 
-        <RoundedBtn marginStyle={{margin: '35px 50px 52px 50px;'}} text="Voir tous les actualites" />
 
         </div>
     )

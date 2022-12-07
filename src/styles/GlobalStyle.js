@@ -8,7 +8,8 @@ const GlobalStyle = createGlobalStyle`
     ${fonts};
 
     body {
-        margin : 10pt 20px;
+        margin: -9pt 20px;
+
     }
     header svg {
         color: var(--main-bleu);
@@ -35,17 +36,17 @@ const GlobalStyle = createGlobalStyle`
         color: var(--bs-btn-active-color)!important;
     }
     .logoTxt {
-        fontSize: '30px',
-        fontWeight: '700',
-        fontFamily: 'HelveticaNeue',
-        marginLeft: '48px'
+        fontSize: 30px;
+        fontWeight: 700;
+        fontFamily: HelveticaNeue;
+        marginLeft: 48px;
     }
     #section1,#section2,#section3 {
         margin: auto;
         max-width: 500px;
     }
     #section1 {
-        margin-top: 30px;
+        margin-top: 18px;
     }
     #section2.flickity-enabled.is-draggable {
 

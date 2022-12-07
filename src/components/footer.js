@@ -35,9 +35,9 @@ var style = {
 function FooterBar() {
     return (
         <div style={style}>
-            <Button className=""><Icon name='Home' />Accueil</Button>
-            <Button className=""><Icon name='Car' />Transport</Button>
-            <Button className=""><Icon name='User' />Profile</Button>
+            <Button style={btnStyle} className=""><Icon name='Home' />Accueil</Button>
+            <Button style={btnStyle} className=""><Icon name='Car' />Transport</Button>
+            <Button style={btnStyle} className=""><Icon name='User' />Profile</Button>
         </div>
     )
 }

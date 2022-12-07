@@ -13,7 +13,7 @@ import "flickity/css/flickity.css";
 
 const Section1 = ({ title }) => {
     const h3style = {
-        marginBottom: '49px',
+        marginBottom: '47px',
         marginTop: '49px',
         color: 'var(--main-bleu)',
         lineHeight: '39px',
