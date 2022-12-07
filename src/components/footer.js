@@ -16,7 +16,10 @@ var style = {
     maxWidth : '500px',
     borderTopLeftRadius:'80px',
     borderTopRightRadius:'80px',
-    boxShadow: "0px -3px 6px 0px #000000",
+    boxShadow: "0px -3px 6px 0px #0000000d",
+    display: 'flex',
+    zIndex: '1000',
+    justifyContent: 'space-evenly',
 }
  const btnStyle = {
     borderRadius: '80px',
