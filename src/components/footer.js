@@ -25,7 +25,7 @@ var phantom = {
   width: '100%',
 }
 
-function Footer({ children="" }) {
+function FooterBar({ children="" }) {
     return (
         <div>
             <div style={phantom} />
@@ -39,4 +39,4 @@ function Footer({ children="" }) {
     )
 }
 
-export default Footer
+export default FooterBar

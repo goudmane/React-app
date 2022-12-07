@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import Section1 from '@components/section1'
 import Section2 from '@components/section2'
 import Section3 from '@components/section3'
-import Footer from '@components/footer'
+import FooterBar from '@components/footer'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import { GlobalStyle, theme } from '@styles';
@@ -28,7 +28,7 @@ const IndexPage = () => {
     <Section1 pageTitle="Home Page"/>
     <Section2 />
     <Section3 />
-    <Footer/>
+    <FooterBar />
     </>
   )
 }
