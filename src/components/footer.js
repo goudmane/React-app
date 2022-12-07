@@ -25,12 +25,12 @@ var phantom = {
   width: '100%',
 }
 
-function FooterBar({ children="" }) {
+function FooterBar() {
     return (
         <div>
             <div style={phantom} />
             <div style={style}>
-                { children }
+
                 <Button className=""><Icon name='Home' />Accueil</Button>
                 <Button className=""><Icon name='Car' />Transport</Button>
                 <Button className=""><Icon name='User' />Profile</Button>
