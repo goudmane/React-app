@@ -36,10 +36,10 @@ const GlobalStyle = createGlobalStyle`
         color: var(--bs-btn-active-color)!important;
     }
     .logoTxt {
-        fontSize: 30px;
-        fontWeight: 700;
-        fontFamily: HelveticaNeue;
-        marginLeft: 48px;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: HelveticaNeue;
+        margin-left: 48px;
     }
     #section1,#section2,#section3 {
         margin: auto;

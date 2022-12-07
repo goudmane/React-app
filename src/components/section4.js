@@ -6,10 +6,10 @@ import "flickity/css/flickity.css";
 import RoundedBtn from "./roundedBtn";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Grid } from "swiper";
 // Import Swiper styles
 import 'swiper/css';
-
+import "swiper/css/grid";
 
 export default class Section4 extends Component {
 
@@ -34,8 +34,11 @@ export default class Section4 extends Component {
       <div id="section2">
         <h3 style={h3style}>NOS MARQUES</h3>
         <Swiper
-            slidesPerView={"auto"}
-            centeredSlides={true}
+            slidesPerView={2}
+            grid={{
+                rows: 2,
+              }}
+            centeredSlides={false}
             loop= {true}
             spaceBetween={20}
             className="mySwiper">

@@ -28,6 +28,7 @@ const IndexPage = () => {
     <Section1 pageTitle="Home Page"/>
     <Section2 />
     <Section3 />
+    <Section4 />
     <FooterBar />
     </>
   )
