@@ -15,6 +15,7 @@ import {
   IconPlayStore,
   IconSearch,
   IconQrCode,
+  IconMenu,
   IconInformation,
   IconMagasin,
   IconRestaurant,
