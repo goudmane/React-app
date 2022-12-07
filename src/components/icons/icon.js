@@ -15,7 +15,12 @@ import {
   IconPlayStore,
   IconSearch,
   IconQrCode,
-  IconMenu,
+  IconInformation,
+  IconMagasin,
+  IconRestaurant,
+  IconHome,
+  IconCar,
+  IconUser,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
