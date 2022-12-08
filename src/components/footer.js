@@ -25,30 +25,36 @@ var style = {
 }
 
 
+const arrayOfObjects = [
+    {
+        txt : 'Accueil',
+        iconName : 'Home',
+        extra : ''
+    },{
+        txt : 'Mobilité',
+        iconName : 'Car',
+        extra : ''
+    },{
+        txt : 'Profil',
+        iconName : 'User',
+        extra : ''
+    },
+];
+
 
 
 function FooterBar() {
-    [
-        {
-            txt : 'Accueil',
-            iconName : 'Home',
-            extra : ''
-        },{
-            txt : 'Mobilité',
-            iconName : 'Car',
-            extra : ''
-        },{
-            txt : 'Profil',
-            iconName : 'User',
-            extra : ''
-        },
-    ].map((fLink) => {
-        return (
+
+    return (
+        <>
+            {arrayOfObjects.map(({ txt, iconName }) => (
             <div style={style}>
-                <FooterBtn iconName={fLink.iconName} txt={fLink.txt} />
+                <FooterBtn key={iconName} iconName={iconName} txt={txt} />
             </div>
-        )
-    })
+            ))}
+        </>
+    );
+
 }
 
 export default FooterBar
