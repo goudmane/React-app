@@ -98,22 +98,25 @@ const Section1 = ({ title }) => {
                 <SwiperSlide className="section1Slider">
                     <img src={sliderImg} rounded />
                     <div style={sliderTxtConainerStyle}>
-                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
-                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
+                        <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni oppressi pollicitos vivendi ob.</p>
+                        <div>
+                            <RoundedBtn marginStyle={{margin: '0px 0px 0px 0px',backgroundColor:'#ffff',color:'#0000'}} text="Je participe" />
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="section1Slider">
                     <img src={sliderImg} rounded />
                     <div style={sliderTxtConainerStyle}>
-                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
-                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
+                        <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni oppressi pollicitos vivendi ob.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="section1Slider">
                     <img src={sliderImg} rounded />
                     <div style={sliderTxtConainerStyle}>
-                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
-                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
+                        <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni oppressi pollicitos vivendi ob.</p>
                     </div>
                 </SwiperSlide>
              </Swiper>
