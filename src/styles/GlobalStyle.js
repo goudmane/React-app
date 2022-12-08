@@ -72,24 +72,24 @@ const GlobalStyle = createGlobalStyle`
         counter-increment: carousel-cell;
       }
 
-      /* cell number */
-      .carousel-cell:before {
+    /* cell number */
+    .carousel-cell:before {
         display: block;
         text-align: center;
         content: counter(carousel-cell);
         line-height: 200px;
         font-size: 80px;
         color: white;
-      }
-    .section1Swiper {
+    }
+    #section1 > .section1Swiper {
         margin-bottom: 35px;
     }
-    .section1Swiper > .section1Slider {
+    #section1 > .section1Swiper > .section1Slider {
         height: 300px;
         width: 100%;
         border-radius: 5px !important;
     }
-    .section1Swiper > .section1Slider  > img {
+    #section1 > .section1Swiper > .section1Slider  > img {
         height: 300px;
         width: 100%;
         border-radius: 5px !important;
@@ -116,22 +116,22 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         border-radius: 0;
     }
-    /* //width: 100vw; */
-    .swiper {
+
+
+    /* Section 2 */
+    #section2 > .swiper {
         width: 100vw;
         height: 100%;
         max-width: 414px;
         margin: auto;
         left: -20px;
+    }
 
-      }
-
-      .swiper-slide {
+    #section2 > .swiper-slide {
         text-align: center;
         font-size: 18px;
         background: #fff;
 
-        /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -144,32 +144,28 @@ const GlobalStyle = createGlobalStyle`
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-      }
+    }
 
-      .swiper-slide img {
+    #section2 > .swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 5px !important;
-      }
+    }
 
-      .swiper-slide {
+    #section2 > .swiper-slide {
         width: 172.3px !important;
         height: 230px;
         margin-top: 16px;
-
-      }
-      .swiper-slide.swiper-slide-active {
+    }
+    #section2 > .swiper-slide.swiper-slide-active {
         margin-top: 0;
         width: 196.7px !important;
         height: 262px;
-      }
+    }
+    /* Section 2 */
 
-
-      .footerMenuBtn{
-
-      }
 `;
 
 export default GlobalStyle;
