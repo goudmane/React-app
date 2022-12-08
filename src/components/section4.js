@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import img1 from '@images/s4-1.png';
-import img2 from '@images/s4-2.png';
+import img2 from '@images/s4-2.svg';
 import img3 from '@images/s4-3.png';
 import img4 from '@images/s4-4.png';
 import RoundedBtn from "./roundedBtn";

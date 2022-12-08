@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         margin: 0px 20px;
-
+        margin-bottom: 70px;
     }
     header svg {
         color: var(--main-bleu);
