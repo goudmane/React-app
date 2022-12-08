@@ -49,7 +49,11 @@ const Section1 = ({ title }) => {
     const sliderTxtConainerStyle = {
         textAlign: 'center',
         position: 'relative',
-        bottom: '83px'
+        bottom: '147px',
+        background: 'transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box',
+        borderRadius: '0px 0px 5px 5px',
+        opacity: '1',
+        paddingBottom: '80px'
     }
     const sliderTxtTitleStyle = {
         letterSpacing: '0.5px',
@@ -59,10 +63,29 @@ const Section1 = ({ title }) => {
     }
     const sliderTxtParagraphStyle = {
         textAlign: 'center',
-        font: 'normal normal normal 16px/21px Roboto',
+        font: 'normal normal normal 14px/19px Roboto',
         letterSpacing: '0px',
         color: '#FFFFFF',
         opacity: '1'
+    }
+    const sliderBtnhStyle = {
+        wordSpacing: '-3px',
+        position: 'absolute',
+        width: '145px',
+        height: '40px',
+        left: '0',
+        right: '0',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        top: '70.5px',
+        background: '#FFFFFF 0% 0% no-repeat padding-box',
+        borderRadius: '30px',
+        font: 'normal normal 500 18px/24px Roboto',
+        letterSpacing: '0.5px',
+        color: '#303189',
+        opacity: '1',
+        textAlign: 'center',
+        border: 'unset'
     }
     const data = useStaticQuery(graphql`
     query {
@@ -101,7 +124,7 @@ const Section1 = ({ title }) => {
                         <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
                         <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni oppressi pollicitos vivendi ob.</p>
                         <div>
-                            <RoundedBtn marginStyle={{margin: '0px 0px 0px 0px',backgroundColor:'#ffff',color:'#0000'}} text="Je participe" />
+                            <RoundedBtn marginStyle={sliderBtnhStyle} text="Je participe" />
                         </div>
                     </div>
                 </SwiperSlide>

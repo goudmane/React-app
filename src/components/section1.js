@@ -112,7 +112,7 @@ const Section1 = ({ title }) => {
             <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
                 <Button style={btnPlacmentStyle} className='BtnActive' onClick={handleClick}><div style={divPlacmentStyle}><span style={{...svgPlacmentStyle,...{margin: '0px 7px 0px 5px'}}}><Icon  name='Magasin' /></span>Magasins</div></Button>
                 <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div style={divPlacmentStyle}><span style={Object.assign({}, svgPlacmentStyle, {margin: '0px 5px 0px 3px'})}><Icon  name='Restaurant' /></span>Restauration</div></Button>
-                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div style={divPlacmentStyle}><span style={{...svgPlacmentStyle,...{margin: '0px 2px 0px 3px'}}}><Icon  name='Info' /></span>Informations</div></Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div style={divPlacmentStyle}><span style={{...svgPlacmentStyle,...{margin: '0px 2px 0px 0px'}}}><Icon  name='Info' /></span>Informations</div></Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
