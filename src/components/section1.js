@@ -84,9 +84,11 @@ const Section1 = ({ title }) => {
             >
                 <SwiperSlide className="section1Slider">
                     <img src="https://placeimg.com/640/480/animals" rounded />
-
+                    <div>
+                        <h3>lorem epsum</h3>
+                        <p>lorem epsum</p>
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
                 <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
                 <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
             </Swiper>
