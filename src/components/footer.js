@@ -29,15 +29,15 @@ const arrayOfObjects = [
     {
         txt : 'Accueil',
         iconName : 'Home',
-        extra : ''
+        extra : 'd-block'
     },{
         txt : 'Mobilité',
         iconName : 'Car',
-        extra : ''
+        extra : 'd-flex'
     },{
         txt : 'Profil',
         iconName : 'User',
-        extra : ''
+        extra : 'd-flex'
     },
 ];
 
@@ -48,8 +48,8 @@ function FooterBar() {
     return (
         <>
         <div style={style}>
-            {arrayOfObjects.map(({ txt, iconName }) => (
-                <FooterBtn key={iconName} iconName={iconName} txt={txt} />
+            {arrayOfObjects.map(({ txt, iconName, extra }) => (
+                <FooterBtn key={iconName} styleM={extra} iconName={iconName} txt={txt} />
             ))}
         </div>
         </>
