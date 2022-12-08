@@ -10,28 +10,12 @@ const FooterBtn = ({txt}) => {
   const animation = useRef(null);
 
   const handleClick = () => {
-    movment ? animation.current.pause() : animation.current.play();
+    movment ? btnAnimation() : animation.current.play();
     setMovment(!movment);
   };
 
   useEffect(() => {
-    animation.current = anime.timeline({
-        easing: 'easeInOutQuad',
-        duration:500,
-    });
 
-    animation.current.add(
-        {
-            targets: `.FooterBtn`,
-            scaleX: [0,1] ,
-            visibility: 'visible'
-        }
-    ).add(
-        {
-            targets: `.FooterBtn > span`,
-            left: '0px',
-        }
-    );
 
   }, []);
 
@@ -55,8 +39,30 @@ const FooterBtn = ({txt}) => {
     transform: 'scaleX(1)',
     left: '20px',
  }
+
+ const btnAnimation = () => {
+    animation.current = anime.timeline({
+        easing: 'easeInOutQuad',
+        duration:500,
+    });
+    animation.current.add(
+        {
+            targets: `.FooterBtn`,
+            scaleX: [0,1] ,
+            visibility: 'visible'
+        }
+    ).add(
+        {
+            targets: `.FooterBtn > span`,
+            left: '0px',
+        }
+    );
+}
+
+
+
   return (
-    <Button style={btnStyle} className="FooterBtn" onClick={handleClick}>
+    <Button style={btnStyle} className="FooterBtn" onMouseOver={btnAnimationss}>
         <span style={spanStyle}><Icon  name={txt} /></span>{txt}
     </Button>
   );
