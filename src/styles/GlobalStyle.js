@@ -14,6 +14,11 @@ const GlobalStyle = createGlobalStyle`
     header svg {
         color: var(--main-bleu);
     }
+    .w-100.btn-group.btn-group-lg:first-child {
+        background-color: var(--main-bleu);
+        border-color: var(--main-bleu);
+        color: var(--bs-btn-active-color);
+    }
     .BtnActive{
         background-color: var(--main-bleu);
         border-color: var(--main-bleu);

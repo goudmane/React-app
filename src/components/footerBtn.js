@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import { Icon } from '@components/icons';
 const ticks = Array.from(Array(8));
 
-const FooterBtn = ({txt}) => {
+const FooterBtn = ({txt , iconName}) => {
   const [movment, setMovment] = useState(false);
   const animation = useRef(null);
   let toClass = 'd-none';
@@ -73,7 +73,7 @@ const FooterBtn = ({txt}) => {
 
   return (
     <div className='d-inline-flex' onClick={handleToggle}>
-        <span style={spanStyle}><Icon  name={txt} /></span>
+        <span style={spanStyle}><Icon  name={iconName} /></span>
         <Button style={btnStyle} className={`FooterBtn  ${isActive ? 'd-block' : 'd-none'}`} >
             {txt}
         </Button>
