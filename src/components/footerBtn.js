@@ -61,9 +61,12 @@ const FooterBtn = ({txt}) => {
 
 
   return (
-    <Button style={btnStyle} className="FooterBtn" onMouseOver={btnAnimation}>
-        <span style={spanStyle}><Icon  name={txt} /></span>{txt}
-    </Button>
+    <div>
+        <span style={spanStyle}><Icon  name={txt} /></span>
+        <Button style={btnStyle} className="FooterBtn" onMouseOver={btnAnimation}>
+            {txt}
+        </Button>
+    </div>
   );
 };
 
