@@ -1,12 +1,10 @@
 
 import React, { Component } from "react";
 
-import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
 import RoundedBtn from "./roundedBtn";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import 'swiper/css';
 
@@ -38,26 +36,11 @@ export default class Section2 extends Component {
         marginLeft: '20px'
     }
 
-    const flickityOptions = {
-        freeScroll: true,
-        wrapAround: true
-    }
 
     return (
       <div id="section2">
         <h3 style={h3style}>ÉVÉNEMENTS TENDANCE</h3>
-        {/* <Flickity
-            className={'carousel'} // default ''
-            elementType={'div'} // default 'div'
-            options={flickityOptions} // takes flickity options {}
 
-        >
-            <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
-            <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
-            <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
-            <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
-            <div class="carousel-cell"><img src="https://placeimg.com/640/480/animals" /></div>
-        </Flickity> */}
             <Swiper
                 slidesPerView={"auto"}
                 centeredSlides={true}

@@ -8,8 +8,12 @@ import {useState} from 'react';
 import RoundedBtn from "./roundedBtn";
 import { graphql, useStaticQuery } from 'gatsby'
 
-import Flickity from "react-flickity-component";
-import "flickity/css/flickity.css";
+/* import Flickity from "react-flickity-component";
+import "flickity/css/flickity.css"; */
+
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import 'swiper/css';
 
 const Section1 = ({ title }) => {
     const h3style = {
@@ -47,10 +51,6 @@ const Section1 = ({ title }) => {
     }
   `)
 
-    const flickityOptions = {
-        freeScroll: true,
-        wrapAround: true
-    }
 
 
     const [isActive, setIsActive] = useState(false);
@@ -69,29 +69,12 @@ const Section1 = ({ title }) => {
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
 
-
-            {/* <Flickity
-                className={'category-carousel'} // default ''
-                elementType={'div'} // default 'div'
-                options={flickityOptions} // takes flickity options {}
-                disableImagesLoaded={false} // default false
-                reloadOnUpdate // default false
-                static // default false
-                selectedAttraction='0.2'
-                friction='0.8'
-            >
-                <div class="category-carousel-cell"></div>
-                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-            </Flickity> */}
             <Swiper className="section1Swiper">
                 <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
                 <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
                 <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
                 <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
             </Swiper>
-
-
 
         <RoundedBtn marginStyle={{margin: '35px 50px 52px 50px;'}} text="Voir tous les actualites" />
 
