@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "",
+    siteUrl: "https://main--storied-blini-de57cd.netlify.app/",
     title: "",
   },
   plugins: [
