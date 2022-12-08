@@ -13,7 +13,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 /* import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css"; */
 
-import sliderImg from './slider1.png';
+import sliderImg from '/slider1.png';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
