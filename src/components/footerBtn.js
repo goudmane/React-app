@@ -67,7 +67,7 @@ const FooterBtn = ({txt}) => {
   return (
     <div className='d-inline-flex'>
         <span style={spanStyle}><Icon  name={txt} /></span>
-        <Button style={btnStyle} className={"FooterBtn" + toClass} onMouseOver={handleClick}>
+        <Button style={btnStyle} className={"FooterBtn  " + toClass} onClick={handleClick}>
             {txt}
         </Button>
     </div>
