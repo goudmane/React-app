@@ -24,15 +24,31 @@ var style = {
     justifyContent: 'space-evenly',
 }
 
+const footerLinks = [
+        {
+            txt : 'Accueil',
+            iconName : 'Home',
+            extra : ''
+        },{
+            txt : 'Mobilité',
+            iconName : 'Car',
+            extra : ''
+        },{
+            txt : 'Profil',
+            iconName : 'User',
+            extra : ''
+        },
+    ];
 
 
 function FooterBar() {
     return (
         <div style={style}>
-            <FooterBtn txt='Home'/>
-            <FooterBtn txt='Car'/>
-            <FooterBtn txt='User'/>
+            footerLinks.data.map(function (fLink) {
+                <FooterBtn iconName={fLink.iconName} txt={fLink.txt} />
+            })
         </div>
+
     )
 }
 
