@@ -81,15 +81,15 @@ const GlobalStyle = createGlobalStyle`
         font-size: 80px;
         color: white;
     }
-    #section1 > .section1Swiper {
+    #section1 .section1Swiper {
         margin-bottom: 35px;
     }
-    #section1 > .section1Swiper > .section1Slider {
+    #section1 .section1Swiper .section1Slider {
         height: 300px;
         width: 100%;
         border-radius: 5px !important;
     }
-    #section1 > .section1Swiper > .section1Slider  > img {
+    #section1 .section1Swiper .section1Slider  > img {
         height: 300px;
         width: 100%;
         border-radius: 5px !important;
@@ -119,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
 
 
     /* Section 2 */
-    #section2 > .swiper {
+    #section2 .swiper {
         width: 100vw;
         height: 100%;
         max-width: 414px;
@@ -127,7 +127,7 @@ const GlobalStyle = createGlobalStyle`
         left: -20px;
     }
 
-    #section2 > .swiper-slide {
+    #section2 .swiper-slide {
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -146,7 +146,7 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
     }
 
-    #section2 > .swiper-slide img {
+    #section2 .swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
@@ -154,12 +154,12 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 5px !important;
     }
 
-    #section2 > .swiper-slide {
+    #section2 .swiper-slide {
         width: 172.3px !important;
         height: 230px;
         margin-top: 16px;
     }
-    #section2 > .swiper-slide.swiper-slide-active {
+    #section2 .swiper-slide.swiper-slide-active {
         margin-top: 0;
         width: 196.7px !important;
         height: 262px;

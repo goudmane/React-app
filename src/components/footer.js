@@ -42,7 +42,7 @@ const footerLinks = [
 
 
 function FooterBar() {
-    footerLinks.map(function (fLink) {
+    this.footerLinks.map(function (fLink) {
         return (
             <div style={style}>
                 <FooterBtn iconName={fLink.iconName} txt={fLink.txt} />
