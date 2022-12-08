@@ -17,18 +17,22 @@ const FooterBtn = ({txt}) => {
   useEffect(() => {
     animation.current = anime.timeline({
         easing: 'easeOutExpo',
-        duration: 750
+        duration:500,
     });
 
-    for (const tick in ticks) {
-      animation.current.add(
+    animation.current.add(
         {
-          targets: `.FooterBtn`,
-          scaleY: 1.5 + Math.random() * 4,
-          duration: 300 + Math.random() * 300
+            targets: `.FooterBtn`,
+            scaleX: 1 ,
+            visibility: 'visible'
         }
-      );
-    }
+    ).add(
+        {
+            targets: `.FooterBtn > span`,
+            scaleX: 1 ,
+            visibility: 'visible'
+        }
+    );
 
   }, []);
 
@@ -42,10 +46,18 @@ const FooterBtn = ({txt}) => {
     paddingBottom: '8px',
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '-3px'
+    marginBottom: '-3px',
+    transform: 'scaleX(0)',
+    visibility: 'hidden'
+ }
+
+ const spanStyle = {
+    visibility: 'visible',
  }
   return (
-    <Button style={btnStyle} className="FooterBtn" onClick={handleClick}><Icon name={txt} />{txt}</Button>
+    <Button style={btnStyle} className="FooterBtn" onClick={handleClick}>
+        <span><Icon name={txt} /></span>{txt}
+    </Button>
   );
 };
 
