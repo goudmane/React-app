@@ -16,14 +16,14 @@ const FooterBtn = ({txt}) => {
 
   useEffect(() => {
     animation.current = anime.timeline({
-        easing: 'easeOutExpo',
+        easing: 'easeInOutQuad',
         duration:500,
     });
 
     animation.current.add(
         {
             targets: `.FooterBtn`,
-            scaleX: 1 ,
+            scaleX: [0,1] ,
             visibility: 'visible'
         }
     ).add(
