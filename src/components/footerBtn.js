@@ -21,22 +21,25 @@ const FooterBtn = ({txt}) => {
 
   const btnStyle = {
     borderRadius: '80px',
-    background: 'rgb(48 49 137 / 20%)',
-    color: '#303189',
+    background: 'rgba(48, 49, 137, 0.2)',
+    color: 'rgb(48, 49, 137)',
     border: 'unset',
     paddingInlineEnd: '18px',
     fontSize: '14px',
     paddingBottom: '8px',
-    display: 'flex',
-    alignItems: 'center',
-    marginBottom: '-3px',
+    marginBottom: '-1px',
+    transform: 'scaleX(1)',
+    width: '104px',
+    position: 'relative',
+    right: '10px',
+    textAlign: 'end'
 
  }
 
  const spanStyle = {
-    visibility: 'visible',
-    transform: 'scaleX(1)',
-    left: '20px',
+    left: '23px',
+    position: 'relative',
+    top: '3px'
  }
 
  const btnAnimation = () => {
@@ -61,7 +64,7 @@ const FooterBtn = ({txt}) => {
 
 
   return (
-    <div>
+    <div className='d-inline-flex'>
         <span style={spanStyle}><Icon  name={txt} /></span>
         <Button style={btnStyle} className="FooterBtn" onMouseOver={btnAnimation}>
             {txt}
