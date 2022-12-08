@@ -38,12 +38,7 @@ export default class Section4 extends Component {
         marginLeft: '17px'
     }
 
-    const pagination = {
-        clickable: false,
-        renderBullet: function (index, className) {
-            return '<span class="'+className+' swiper-pagination-costume">' + "</span>";
-        },
-    };
+
 
 
     return (

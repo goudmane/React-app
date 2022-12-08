@@ -59,6 +59,12 @@ const Section1 = ({ title }) => {
         freeScroll: true,
         wrapAround: true
     }
+    const pagination = {
+        clickable: false,
+        renderBullet: function (index, className) {
+            return '<span class="'+className+' swiper-pagination-costume">' + "</span>";
+        },
+    };
 
     return (
         <div id='section3'>
