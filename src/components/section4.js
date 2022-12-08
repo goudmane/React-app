@@ -49,21 +49,21 @@ export default class Section4 extends Component {
 
         <Container>
             <Row>
-                <Col bsPrefix='6'><img style={{
+                <Col bsPrefix='col-6'><img style={{
                     position: 'relative',
                     bottom: '50px'
                 }} src={img1} rounded /></Col>
-                <Col><img style={{
+                <Col bsPrefix='col-6'><img style={{
                     position: 'relative',
                     bottom: '-20px',
                     left: '21px'
                 }} src={img2} rounded /></Col>
-                <Col><img style={{
+                <Col bsPrefix='col-6'><img style={{
                     position: 'relative',
                     bottom: '-24px',
                     left: '2px'
                 }} src={img3} rounded /></Col>
-                <Col><img style={{
+                <Col bsPrefix='col-6'><img style={{
                     position: 'relative',
                     bottom: '-15px',
                     left: '30px'

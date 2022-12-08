@@ -61,15 +61,13 @@ const Section1 = ({ title }) => {
         textAlign: 'center',
         position: 'relative',
         bottom: '83px',
-        textAlign: 'center',
-        position: 'relative',
-        bottom: '83px',
         background: 'transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box',
         paddingBottom: '13px',
-        borderRadius: '0px 0px 5px 5px'
+        borderRadius: '0px 0px 5px 5px',
+        marginLeft: '4px'
     }
     const sliderTxtTitleStyle = {
-        letterSpacing: '0.5px',
+        letterSpacing: '0.8px',
         font: 'normal normal bold 25px/33px Roboto',
         textTransform: 'uppercase',
         color: '#FFFFFF'
@@ -77,9 +75,10 @@ const Section1 = ({ title }) => {
     const sliderTxtParagraphStyle = {
         textAlign: 'center',
         font: 'normal normal normal 16px/21px Roboto',
-        letterSpacing: '0px',
         color: '#FFFFFF',
-        opacity: '1'
+        opacity: '1',
+        letterSpacing: '-0.3px',
+        marginRight: '5px'
     }
     const data = useStaticQuery(graphql`
     query {
