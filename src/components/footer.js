@@ -42,14 +42,13 @@ const footerLinks = [
 
 
 function FooterBar() {
-    return (
-        <div style={style}>
-            footerLinks.data.map(function (fLink) {
+    footerLinks.data.map(function (fLink) {
+        return (
+            <div style={style}>
                 <FooterBtn iconName={fLink.iconName} txt={fLink.txt} />
-            })
-        </div>
-
-    )
+            </div>
+        )
+    })
 }
 
 export default FooterBar
