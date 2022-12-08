@@ -15,6 +15,7 @@ import "flickity/css/flickity.css"; */
 
 import sliderImg from '@images/slider1.png';
 
+
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import 'swiper/css';
@@ -105,7 +106,7 @@ const Section1 = ({ title }) => {
                     modules={[Pagination]}
             >
                 <SwiperSlide className="section1Slider">
-                    <img src={'./slider1.png'} rounded />
+                    <img src={'@images/slider1.png'} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
                         <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
