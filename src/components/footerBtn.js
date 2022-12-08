@@ -29,8 +29,7 @@ const FooterBtn = ({txt}) => {
     ).add(
         {
             targets: `.FooterBtn > span`,
-            scaleX: 1 ,
-            visibility: 'visible'
+            left: '0px',
         }
     );
 
@@ -47,12 +46,14 @@ const FooterBtn = ({txt}) => {
     display: 'flex',
     alignItems: 'center',
     marginBottom: '-3px',
-    transform: 'scaleX(0)',
+
     visibility: 'hidden'
  }
 
  const spanStyle = {
     visibility: 'visible',
+    transform: 'scaleX(1)',
+    left: '20px',
  }
   return (
     <Button style={btnStyle} className="FooterBtn" onClick={handleClick}>
