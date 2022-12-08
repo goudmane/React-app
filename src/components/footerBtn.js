@@ -1,5 +1,5 @@
 import anime from "animejs/lib/anime.es.js";
-import { useState, useRef, useEffect, React } from "react";
+import  React , { useState, useRef, useEffect} from "react";
 import Button from 'react-bootstrap/Button';
 import { Icon } from '@components/icons';
 const ticks = Array.from(Array(8));
