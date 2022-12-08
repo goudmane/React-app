@@ -14,6 +14,9 @@ import "flickity/css/flickity.css"; */
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import 'swiper/css';
+import "swiper/css/pagination";
+// import required modules
+import { Pagination } from "swiper";
 
 const Section1 = ({ title }) => {
     const h3style = {
@@ -49,8 +52,15 @@ const Section1 = ({ title }) => {
         }
       }
     }
-  `)
+    `)
 
+
+    const pagination = {
+        clickable: false,
+        renderProgressbar: function (progressbarFillClass) {
+            return '<span class="' + progressbarFillClass + '">' + "</span>";
+        },
+    };
 
 
     const [isActive, setIsActive] = useState(false);
@@ -70,7 +80,10 @@ const Section1 = ({ title }) => {
             <h3 style={h3style}>THE PLACE TO BE</h3>
 
             <Swiper className="section1Swiper">
-                <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+                <SwiperSlide className="section1Slider">
+                    <img src="https://placeimg.com/640/480/animals" rounded />
+
+                </SwiperSlide>
                 <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
                 <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
                 <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
