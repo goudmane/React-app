@@ -19,6 +19,7 @@ import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
 
 const Section1 = ({ title }) => {
+
     const h3style = {
         marginBottom: "53px",
         marginTop: "42px",
@@ -44,6 +45,24 @@ const Section1 = ({ title }) => {
         background: 'var(--main-bleu)',
         height: '45px'
 
+    }
+    const sliderTxtConainerStyle = {
+        textAlign: 'center',
+        position: 'relative',
+        bottom: '83px'
+    }
+    const sliderTxtTitleStyle = {
+        letterSpacing: '0.5px',
+        font: 'normal normal bold 25px/33px Roboto',
+        textTransform: 'uppercase',
+        color: '#FFFFFF'
+    }
+    const sliderTxtParagraphStyle = {
+        textAlign: 'center',
+        font: 'normal normal normal 16px/21px Roboto',
+        letterSpacing: '0px',
+        color: '#FFFFFF',
+        opacity: '1'
     }
     const data = useStaticQuery(graphql`
     query {
