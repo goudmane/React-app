@@ -159,14 +159,14 @@ const GlobalStyle = createGlobalStyle`
       }
 
       .swiper-slide {
-        width: 172px !important;
+        width: 172.3px !important;
         height: 230px;
         margin-top: 16px;
 
       }
       .swiper-slide.swiper-slide-active {
         margin-top: 0;
-        width: 196px !important;
+        width: 196.7px !important;
         height: 262px;
       }
 
