@@ -29,8 +29,12 @@ const Section1 = ({ title }) => {
         textAlign: 'start'
     }
     const svgPlacmentStyle = {
-        margin: '0px 7px',
-        marginBottom: '4px'
+        margin: '0px 7px 0px 5px',
+        writingMode: 'vertical-lr'
+    }
+    const divPlacmentStyle = {
+        position: 'relative',
+        left: '3px'
     }
     const h3style = {
         marginBottom: '47px',
@@ -107,9 +111,9 @@ const Section1 = ({ title }) => {
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
-                <Button style={btnPlacmentStyle} className='BtnActive' onClick={handleClick}><div><span style={svgPlacmentStyle}><Icon  name='Magasin' /></span>Magasins</div></Button>
-                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div><span style={svgPlacmentStyle}><Icon  name='Restaurant' /></span>Restauration</div></Button>
-                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div><span style={svgPlacmentStyle}><Icon  name='Info' /></span>Informations</div></Button>
+                <Button style={btnPlacmentStyle} className='BtnActive' onClick={handleClick}><div style={divPlacmentStyle}><span style={svgPlacmentStyle}><Icon  name='Magasin' /></span>Magasins</div></Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div style={divPlacmentStyle}><span style={svgPlacmentStyle}><Icon  name='Restaurant' /></span>Restauration</div></Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div style={divPlacmentStyle}><span style={svgPlacmentStyle}><Icon  name='Info' /></span>Informations</div></Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
