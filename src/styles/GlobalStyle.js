@@ -94,6 +94,13 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         border-radius: 5px !important;
     }
+
+    .swiper-pagination-costume {
+        width: 33px;
+        height: 3px;
+        border-radius: 0px;
+        background: #ffffffb8;
+    }
     .QUEST-carousel-cell {
         height: 300px;
         width: 100%;

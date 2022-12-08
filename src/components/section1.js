@@ -57,8 +57,8 @@ const Section1 = ({ title }) => {
 
     const pagination = {
         clickable: false,
-        renderProgressbar: function (progressbarFillClass) {
-            return '<span class="' + progressbarFillClass + '">' + "</span>";
+        renderBullet: function (index, className = "swiper-pagination-costume") {
+            return '<span class="' + className + '">' + "</span>";
         },
     };
 
@@ -80,8 +80,8 @@ const Section1 = ({ title }) => {
             <h3 style={h3style}>THE PLACE TO BE</h3>
 
             <Swiper className="section1Swiper"
-                pagination={pagination}
-                modules={[Pagination]}
+                    pagination={pagination}
+                    modules={[Pagination]}
             >
                 <SwiperSlide className="section1Slider">
                     <img src="https://placeimg.com/640/480/animals" rounded />
