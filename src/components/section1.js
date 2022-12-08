@@ -24,6 +24,14 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 const Section1 = ({ title }) => {
+    const btnPlacmentStyle = {
+        padding: '2px 6px',
+        textAlign: 'start'
+    }
+    const svgPlacmentStyle = {
+        margin: '0px 7px',
+        marginBottom: '4px'
+    }
     const h3style = {
         marginBottom: '47px',
         marginTop: '49px',
@@ -94,9 +102,9 @@ const Section1 = ({ title }) => {
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
-                <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}><Icon  name="Magasin" />Magasins</Button>
-                <Button className="" onClick={handleClick}><Icon  name="Restaurant" />Restauration</Button>
-                <Button className="" onClick={handleClick}><Icon  name="Info" />Informations</Button>
+                <Button style={btnPlacmentStyle} className={isActive ? 'BtnActive' : ''} onClick={handleClick}><Icon style={svgPlacmentStyle name="Magasin" />Magasins</Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><Icon style={svgPlacmentStyle}  name="Restaurant" />Restauration</Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><Icon style={svgPlacmentStyle}  name="Info" />Informations</Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
