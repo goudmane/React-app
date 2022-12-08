@@ -56,7 +56,7 @@ const FooterBtn = ({txt}) => {
  }
   return (
     <Button style={btnStyle} className="FooterBtn" onClick={handleClick}>
-        <span><Icon name={txt} /></span>{txt}
+        <span style={spanStyle}><Icon  name={txt} /></span>{txt}
     </Button>
   );
 };
