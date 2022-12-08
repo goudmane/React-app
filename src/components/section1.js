@@ -102,7 +102,7 @@ const Section1 = ({ title }) => {
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
-                <Button style={btnPlacmentStyle} className={isActive ? 'BtnActive' : ''} onClick={handleClick}><Icon style={svgPlacmentStyle name="Magasin" />Magasins</Button>
+                <Button style={btnPlacmentStyle} className='BtnActive' onClick={handleClick}><Icon style={svgPlacmentStyle} name="Magasin" />Magasins</Button>
                 <Button style={btnPlacmentStyle} className="" onClick={handleClick}><Icon style={svgPlacmentStyle}  name="Restaurant" />Restauration</Button>
                 <Button style={btnPlacmentStyle} className="" onClick={handleClick}><Icon style={svgPlacmentStyle}  name="Info" />Informations</Button>
             </ButtonGroup>
