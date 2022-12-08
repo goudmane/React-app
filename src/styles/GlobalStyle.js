@@ -122,11 +122,11 @@ const GlobalStyle = createGlobalStyle`
     }
     /* //width: 100vw; */
     .swiper {
-        width: 100%;
+        width: 100vw;
         height: 100%;
         max-width: 414px;
         margin: auto;
-        overflow: hiden;
+        left: -20px;
 
       }
 

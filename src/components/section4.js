@@ -17,7 +17,7 @@ export default class Section4 extends Component {
 
     const h3style = {
         marginBottom: '50px',
-        marginTop: '42px',
+        marginTop: '58px',
         color: 'var(--main-bleu)',
         lineHeight: '33px',
         textAlign: 'center',
@@ -26,12 +26,12 @@ export default class Section4 extends Component {
         textTransform: 'uppercase',
         fontFamily: '\'Roboto\'',
         fontWeight: '900',
-        marginLeft: '20px'
+        marginLeft: '17px'
     }
 
 
     return (
-      <div id="section2">
+      <div id="section4">
         <h3 style={h3style}>NOS MARQUES</h3>
         {/* <Swiper
             slidesPerView={2}
