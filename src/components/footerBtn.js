@@ -8,9 +8,10 @@ const ticks = Array.from(Array(8));
 const FooterBtn = ({txt}) => {
   const [movment, setMovment] = useState(false);
   const animation = useRef(null);
+  let toClass = 'd-none';
 
   const handleClick = () => {
-    movment ? btnAnimation() : animation.current.play();
+    movment ? toClass = 'd-block' : toClass = 'd-none';
     setMovment(!movment);
   };
 
@@ -42,7 +43,7 @@ const FooterBtn = ({txt}) => {
     top: '3px'
  }
 
- const btnAnimation = () => {
+/*  const btnAnimation = () => {
     animation.current = anime.timeline({
         easing: 'easeInOutQuad',
         duration:500,
@@ -60,13 +61,13 @@ const FooterBtn = ({txt}) => {
         }
     );
 }
-
+ */
 
 
   return (
     <div className='d-inline-flex'>
         <span style={spanStyle}><Icon  name={txt} /></span>
-        <Button style={btnStyle} className="FooterBtn" onMouseOver={btnAnimation}>
+        <Button style={btnStyle} className={"FooterBtn" + toClass} onMouseOver={handleClick}>
             {txt}
         </Button>
     </div>
