@@ -20,9 +20,9 @@ const GlobalStyle = createGlobalStyle`
         color: var(--bs-btn-active-color);
     }
     .BtnActive{
-        background-color: var(--main-bleu);
-        border-color: var(--main-bleu);
-        color: var(--bs-btn-active-color);
+        background-color: var(--main-bleu) !important;;
+        border-color: var(--main-bleu) !important;;
+        color: var(--bs-btn-active-color) !important;;
     }
     .btn-group>.btn{
         background: transparent;
