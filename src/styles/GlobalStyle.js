@@ -81,27 +81,18 @@ const GlobalStyle = createGlobalStyle`
         font-size: 80px;
         color: white;
       }
-    .category-carousel.flickity-enabled.is-draggable {
+    .section1Swiper {
         margin-bottom: 35px;
     }
-    .category-carousel-cell {
+    .section1Swiper > SwiperSlide {
         height: 300px;
         width: 100%;
         border-radius: 5px !important;
     }
-
-    .category-carousel-cell.is-selected {
-
-    }
-
-    .category-carousel-cell > img {
+    .section1Swiper > SwiperSlide  > img {
         height: 300px;
         width: 100%;
         border-radius: 5px !important;
-    }
-    .category-carousel-cell.is-selected>img{
-        /* background: #ED2; */
-
     }
     .QUEST-carousel-cell {
         height: 300px;

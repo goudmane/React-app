@@ -70,7 +70,7 @@ const Section1 = ({ title }) => {
             <h3 style={h3style}>THE PLACE TO BE</h3>
 
 
-            <Flickity
+            {/* <Flickity
                 className={'category-carousel'} // default ''
                 elementType={'div'} // default 'div'
                 options={flickityOptions} // takes flickity options {}
@@ -80,10 +80,16 @@ const Section1 = ({ title }) => {
                 selectedAttraction='0.2'
                 friction='0.8'
             >
+                <div class="category-carousel-cell"></div>
                 <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
                 <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-                <div class="category-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-            </Flickity>
+            </Flickity> */}
+            <Swiper className="section1Swiper">
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+                <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+            </Swiper>
 
 
 
