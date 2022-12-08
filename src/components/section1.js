@@ -106,7 +106,7 @@ const Section1 = ({ title }) => {
                     modules={[Pagination]}
             >
                 <SwiperSlide className="section1Slider">
-                    <img src={'../images/logo.png'} rounded />
+                    <img src={'@images/slider1.png'} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
                         <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
@@ -120,7 +120,7 @@ const Section1 = ({ title }) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="section1Slider">
-                    <img src={'../images/logo.png'} rounded />
+                    <img src={'../images/slider1.png'} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
                         <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
