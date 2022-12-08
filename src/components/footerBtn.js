@@ -22,7 +22,7 @@ const FooterBtn = ({txt}) => {
     for (const tick in ticks) {
       animation.current.add(
         {
-          targets: `.`,
+          targets: `.FooterBtn`,
           scaleY: 1.5 + Math.random() * 4,
           duration: 300 + Math.random() * 300
         }
