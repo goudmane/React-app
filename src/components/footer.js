@@ -24,7 +24,11 @@ var style = {
     justifyContent: 'space-evenly',
 }
 
-const footerLinks = [
+
+
+
+function FooterBar() {
+    [
         {
             txt : 'Accueil',
             iconName : 'Home',
@@ -38,11 +42,7 @@ const footerLinks = [
             iconName : 'User',
             extra : ''
         },
-    ];
-
-
-function FooterBar() {
-    this.footerLinks.map(function (fLink) {
+    ].map((fLink) => {
         return (
             <div style={style}>
                 <FooterBtn iconName={fLink.iconName} txt={fLink.txt} />
