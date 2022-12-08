@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     }
     .logoTxt {
         font-size: 30px;
-        font-weight: 700;
+        font-weight: 300;
         font-family: sans-serif,HelveticaNeue;
         margin-left: 48px;
     }
