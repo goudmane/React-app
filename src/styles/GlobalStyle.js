@@ -96,10 +96,12 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .swiper-pagination-costume {
-        width: 33px !important;
-        height: 3px !important;
+        width: 30px !important;
+        height: 2px !important;
         border-radius: 0px !important;
         background: #ffffffb8 !important;
+        position: relative;
+        left: 9px;
     }
     .QUEST-carousel-cell {
         height: 300px;
