@@ -72,8 +72,8 @@ const Section1 = ({ title }) => {
         <div id='section1'>
             <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
                 <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Magasins</Button>
-                <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Restauration</Button>
-                <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Informations</Button>
+                <Button className="" onClick={handleClick}>Restauration</Button>
+                <Button className="" onClick={handleClick}>Informations</Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
