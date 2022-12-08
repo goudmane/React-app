@@ -60,7 +60,13 @@ const Section1 = ({ title }) => {
     const sliderTxtConainerStyle = {
         textAlign: 'center',
         position: 'relative',
-        bottom: '83px'
+        bottom: '83px',
+        textAlign: 'center',
+        position: 'relative',
+        bottom: '83px',
+        background: 'transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box',
+        paddingBottom: '13px',
+        borderRadius: '0px 0px 5px 5px'
     }
     const sliderTxtTitleStyle = {
         letterSpacing: '0.5px',
@@ -102,9 +108,9 @@ const Section1 = ({ title }) => {
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
-                <Button style={btnPlacmentStyle} className='BtnActive' onClick={handleClick}><Icon style={svgPlacmentStyle} name="Magasin" />Magasins</Button>
-                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><Icon style={svgPlacmentStyle}  name="Restaurant" />Restauration</Button>
-                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><Icon style={svgPlacmentStyle}  name="Info" />Informations</Button>
+                <Button style={btnPlacmentStyle} className='BtnActive' onClick={handleClick}><span style={svgPlacmentStyle}><Icon  name='Magasin' /></span>Magasins</Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><span style={svgPlacmentStyle}><Icon  name='Restaurant' /></span>Restauration</Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><span style={svgPlacmentStyle}><Icon  name='Info' /></span>Informations</Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
