@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Image from 'react-bootstrap/Image'
 
+import { Icon } from '@components/icons';
+
 import {useState} from 'react';
 
 import RoundedBtn from "./roundedBtn";
@@ -89,9 +91,9 @@ const Section1 = ({ title }) => {
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
-                <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}>Magasins</Button>
-                <Button className="" onClick={handleClick}>Restauration</Button>
-                <Button className="" onClick={handleClick}>Informations</Button>
+                <Button className={isActive ? 'BtnActive' : ''} onClick={handleClick}><Icon  name="Magasin" />Magasins</Button>
+                <Button className="" onClick={handleClick}><Icon  name="Restaurant" />Restauration</Button>
+                <Button className="" onClick={handleClick}><Icon  name="Info" />Informations</Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
@@ -101,7 +103,7 @@ const Section1 = ({ title }) => {
                     modules={[Pagination]}
             >
                 <SwiperSlide className="section1Slider">
-                    <img src="./slider1.png" rounded />
+                    <img src="/slider1.png" rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
                         <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
