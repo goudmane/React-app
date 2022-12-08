@@ -175,7 +175,10 @@ const GlobalStyle = createGlobalStyle`
         height: 262px;
     }
     /* Section 2 */
-
+    /* Section 4 */
+    .col-6 {
+        height: 82px;
+    }
 `;
 
 export default GlobalStyle;
