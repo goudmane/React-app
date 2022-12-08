@@ -84,12 +84,12 @@ const GlobalStyle = createGlobalStyle`
     #section1 .section1Swiper {
         margin-bottom: 35px;
     }
-    #section1 .section1Swiper .section1Slider {
+    #section1 .section1Swiper div.section1Slider {
         height: 300px;
         width: 100%;
         border-radius: 5px !important;
     }
-    #section1 .section1Swiper .section1Slider  > img {
+    #section1 .section1Swiper div.section1Slider  > img {
         height: 300px;
         width: 100%;
         border-radius: 5px !important;
