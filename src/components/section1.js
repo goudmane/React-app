@@ -70,10 +70,10 @@ const Section1 = ({ title }) => {
             <h3 style={h3style}>THE PLACE TO BE</h3>
 
             <Swiper className="section1Swiper">
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+                <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+                <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+                <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
+                <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
             </Swiper>
 
         <RoundedBtn marginStyle={{margin: '35px 50px 52px 50px;'}} text="Voir tous les actualites" />
