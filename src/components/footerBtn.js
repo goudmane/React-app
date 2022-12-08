@@ -72,9 +72,9 @@ const FooterBtn = ({txt}) => {
 
 
   return (
-    <div className='d-inline-flex'>
+    <div className='d-inline-flex' onClick={handleToggle}>
         <span style={spanStyle}><Icon  name={txt} /></span>
-        <Button style={btnStyle} className={`FooterBtn  ${isActive ? 'd-block' : 'd-none'}`} onClick={handleToggle}>
+        <Button style={btnStyle} className={`FooterBtn  ${isActive ? 'd-block' : 'd-none'}`} >
             {txt}
         </Button>
     </div>
