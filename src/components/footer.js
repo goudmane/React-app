@@ -1,8 +1,7 @@
 
 
 import React, { Component } from "react";
-import Button from 'react-bootstrap/Button';
-import { Icon } from '@components/icons';
+
 
 
 import FooterBtn from './footerBtn.js'
