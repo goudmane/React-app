@@ -26,7 +26,7 @@ export default class Section4 extends Component {
 
     const h3style = {
         marginBottom: '50px',
-        marginTop: '58px',
+        marginTop: '-12px',
         color: 'var(--main-bleu)',
         lineHeight: '33px',
         textAlign: 'center',
@@ -41,18 +41,33 @@ export default class Section4 extends Component {
 
 
 
+
+
     return (
       <div id="section4">
         <h3 style={h3style}>NOS MARQUES</h3>
 
         <Container>
             <Row>
-                <Col><img src={img1} rounded /></Col>
-                <Col><img src={img2} rounded /></Col>
-            </Row>
-            <Row>
-                <Col><img src={img3} rounded /></Col>
-                <Col><img src={img4} rounded /></Col>
+                <Col><img style={{
+                    position: 'relative',
+                    bottom: '50px'
+                }} src={img1} rounded /></Col>
+                <Col><img style={{
+                    position: 'relative',
+                    bottom: '-20px',
+                    left: '21px'
+                }} src={img2} rounded /></Col>
+                <Col><img style={{
+                    position: 'relative',
+                    bottom: '-24px',
+                    left: '2px'
+                }} src={img3} rounded /></Col>
+                <Col><img style={{
+                    position: 'relative',
+                    bottom: '-15px',
+                    left: '30px'
+                }} src={img4} rounded /></Col>
             </Row>
         </Container>
 
