@@ -7,6 +7,7 @@ import RoundedBtn from "./roundedBtn";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import 'swiper/css';
+import sliderImg from '@images/s2.png';
 
 
 export default class Section2 extends Component {
@@ -47,15 +48,10 @@ export default class Section2 extends Component {
                 loop= {true}
                 spaceBetween={20}
                 className="mySwiper">
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-                <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
+                <SwiperSlide><img src={sliderImg} /></SwiperSlide>
+                <SwiperSlide><img src={sliderImg} /></SwiperSlide>
+                <SwiperSlide><img src={sliderImg} /></SwiperSlide>
+                <SwiperSlide><img src={sliderImg} /></SwiperSlide>
             </Swiper>
 
         <RoundedBtn marginStyle={{margin: '50px 50px 42px 50px;'}} text="Voir tous les événements" />

@@ -6,6 +6,15 @@ import Image from 'react-bootstrap/Image'
 import RoundedBtn from "./roundedBtn";
 import { graphql, useStaticQuery } from 'gatsby'
 
+import sliderImg from '@images/s3.png';
+
+
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import 'swiper/css';
+import "swiper/css/pagination";
+// import required modules
+import { Pagination } from "swiper";
 import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
 
@@ -57,20 +66,32 @@ const Section1 = ({ title }) => {
             <h3 style={h3style}>QUESTIONNAIRES</h3>
 
 
-            <Flickity
-                className={'QUEST-carousel'} // default ''
-                elementType={'div'} // default 'div'
-                options={flickityOptions} // takes flickity options {}
-                disableImagesLoaded={false} // default false
-                reloadOnUpdate // default false
-                static // default false
-                selectedAttraction='0.2'
-                friction='0.8'
+            <Swiper className="section1Swiper"
+                    pagination={pagination}
+                    modules={[Pagination]}
             >
-                <div class="QUEST-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-                <div class="QUEST-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-                <div class="QUEST-carousel-cell"><img src="https://placeimg.com/640/480/animals" rounded /></div>
-            </Flickity>
+                <SwiperSlide className="section1Slider">
+                    <img src={sliderImg} rounded />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
+                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className="section1Slider">
+                    <img src={sliderImg} rounded />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
+                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className="section1Slider">
+                    <img src={sliderImg} rounded />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
+                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                    </div>
+                </SwiperSlide>
+             </Swiper>
 
 
 
