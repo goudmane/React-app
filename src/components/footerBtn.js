@@ -31,7 +31,6 @@ const FooterBtn = ({txt}) => {
     alignItems: 'center',
     marginBottom: '-3px',
 
-    visibility: 'hidden'
  }
 
  const spanStyle = {
@@ -49,7 +48,7 @@ const FooterBtn = ({txt}) => {
         {
             targets: `.FooterBtn`,
             scaleX: [0,1] ,
-            visibility: 'visible'
+            visibility: ['hidden','visible']
         }
     ).add(
         {
