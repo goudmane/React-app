@@ -57,8 +57,8 @@ const Section1 = ({ title }) => {
 
     const pagination = {
         clickable: false,
-        renderBullet: function (index, className = "swiper-pagination-costume") {
-            return '<span class="' + className + '">' + "</span>";
+        renderBullet: function (index, className) {
+            return '<span class="swiper-pagination-costume">' + "</span>";
         },
     };
 
