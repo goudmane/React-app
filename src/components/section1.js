@@ -58,7 +58,7 @@ const Section1 = ({ title }) => {
     const pagination = {
         clickable: false,
         renderBullet: function (index, className) {
-            return '<span class='+{className}+'"swiper-pagination-costume">' + "</span>";
+            return '<span class='+{className}+'" swiper-pagination-costume">' + "</span>";
         },
     };
 
@@ -66,7 +66,6 @@ const Section1 = ({ title }) => {
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = event => {
-        // 👇️ toggle isActive state on click
         setIsActive(current => !current);
     };
     return (
