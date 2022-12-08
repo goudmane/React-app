@@ -13,6 +13,8 @@ import { graphql, useStaticQuery } from 'gatsby'
 /* import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css"; */
 
+import sliderImg from './slider1.png';
+
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import 'swiper/css';
@@ -110,14 +112,14 @@ const Section1 = ({ title }) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="section1Slider">
-                    <img src={'/slider1.png'} rounded />
+                    <img src={sliderImg} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
                         <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="section1Slider">
-                    <img src={'/slider1.png'} rounded />
+                    <img src={'/images/logo.png'} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
                         <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
