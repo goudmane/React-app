@@ -49,7 +49,7 @@ export default class Section4 extends Component {
 
         <Container>
             <Row>
-                <Col><img style={{
+                <Col bsPrefix='6'><img style={{
                     position: 'relative',
                     bottom: '50px'
                 }} src={img1} rounded /></Col>

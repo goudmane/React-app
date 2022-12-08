@@ -108,9 +108,9 @@ const Section1 = ({ title }) => {
     return (
         <div id='section1'>
             <ButtonGroup size="lg" className="w-100" style={CategoryGpBtnStyle}>
-                <Button style={btnPlacmentStyle} className='BtnActive' onClick={handleClick}><span style={svgPlacmentStyle}><Icon  name='Magasin' /></span>Magasins</Button>
-                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><span style={svgPlacmentStyle}><Icon  name='Restaurant' /></span>Restauration</Button>
-                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><span style={svgPlacmentStyle}><Icon  name='Info' /></span>Informations</Button>
+                <Button style={btnPlacmentStyle} className='BtnActive' onClick={handleClick}><div><span style={svgPlacmentStyle}><Icon  name='Magasin' /></span>Magasins</div></Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div><span style={svgPlacmentStyle}><Icon  name='Restaurant' /></span>Restauration</div></Button>
+                <Button style={btnPlacmentStyle} className="" onClick={handleClick}><div><span style={svgPlacmentStyle}><Icon  name='Info' /></span>Informations</div></Button>
             </ButtonGroup>
 
             <h3 style={h3style}>THE PLACE TO BE</h3>
