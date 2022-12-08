@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
     }
     #section1,#section2,#section3 {
         margin: auto;
-        max-width: 500px;
+        max-width: 414;
     }
     #section1 {
         margin-top: 30px;
@@ -124,9 +124,9 @@ const GlobalStyle = createGlobalStyle`
     .swiper {
         width: 100%;
         height: 100%;
-        max-width: 500px;
+        max-width: 414px;
         margin: auto;
-        overflow: visible;
+        overflow: hiden;
 
       }
 

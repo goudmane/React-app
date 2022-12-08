@@ -33,7 +33,7 @@ export default class Section4 extends Component {
     return (
       <div id="section2">
         <h3 style={h3style}>NOS MARQUES</h3>
-        <Swiper
+        {/* <Swiper
             slidesPerView={2}
             grid={{
                 rows: 2,
@@ -51,7 +51,7 @@ export default class Section4 extends Component {
             <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
             <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
             <SwiperSlide><img src="https://placeimg.com/640/480/animals" /></SwiperSlide>
-        </Swiper>
+        </Swiper> */}
 
       </div>
     );

@@ -1,5 +1,5 @@
 import anime from "animejs/lib/anime.es.js";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, React } from "react";
 
 const ticks = Array.from(Array(8));
 
