@@ -44,6 +44,24 @@ const Section1 = ({ title }) => {
         height: '45px'
 
     }
+    const sliderTxtConainerStyle = {
+        textAlign: 'center',
+        position: 'relative',
+        bottom: '83px'
+    }
+    const sliderTxtTitleStyle = {
+        letterSpacing: '0.5px',
+        font: 'normal normal bold 25px/33px Roboto',
+        textTransform: 'uppercase',
+        color: '#FFFFFF'
+    }
+    const sliderTxtParagraphStyle = {
+        textAlign: 'center',
+        font: 'normal normal normal 16px/21px Roboto',
+        letterSpacing: '0px',
+        color: '#FFFFFF',
+        opacity: '1'
+    }
     const data = useStaticQuery(graphql`
     query {
       site {
@@ -83,15 +101,27 @@ const Section1 = ({ title }) => {
                     modules={[Pagination]}
             >
                 <SwiperSlide className="section1Slider">
-                    <img src="https://placeimg.com/640/480/animals" rounded />
-                    <div>
-                        <h3>lorem epsum</h3>
-                        <p>lorem epsum</p>
+                    <img src="./slider1.png" rounded />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
+                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
-                <SwiperSlide className="section1Slider"><img src="https://placeimg.com/640/480/animals" rounded /></SwiperSlide>
-            </Swiper>
+                <SwiperSlide className="section1Slider">
+                    <img src="./slider1.png" rounded />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
+                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className="section1Slider">
+                    <img src="./slider1.png" rounded />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>ANFAPLACE MALL</div>
+                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                    </div>
+                </SwiperSlide>
+             </Swiper>
 
         <RoundedBtn marginStyle={{margin: '35px 50px 52px 50px;'}} text="Voir tous les actualites" />
 

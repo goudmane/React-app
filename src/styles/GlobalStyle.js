@@ -102,6 +102,7 @@ const GlobalStyle = createGlobalStyle`
         background: #ffffffb8 !important;
         position: relative;
         left: 9px;
+        margin: 0 14px !important;
     }
     .QUEST-carousel-cell {
         height: 300px;
