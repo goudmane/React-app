@@ -10,6 +10,13 @@ const FooterBtn = ({txt}) => {
   const animation = useRef(null);
   let toClass = 'd-none';
 
+
+  const [isActive, setActive] = useState("false");
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
+
   const handleClick = () => {
     movment ? toClass = 'd-block' : toClass = 'd-none';
     setMovment(!movment);
@@ -67,7 +74,7 @@ const FooterBtn = ({txt}) => {
   return (
     <div className='d-inline-flex'>
         <span style={spanStyle}><Icon  name={txt} /></span>
-        <Button style={btnStyle} className={"FooterBtn  " + toClass} onClick={handleClick}>
+        <Button style={btnStyle} className={`FooterBtn  ${isActive ? 'd-block' : 'd-none'}`} onClick={handleToggle}>
             {txt}
         </Button>
     </div>
