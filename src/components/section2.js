@@ -42,7 +42,7 @@ export default class Section2 extends Component {
 
     const sliderTxtConainerStyle = {
         position: 'absolute',
-        bottom: '2px',
+        bottom: '0px',
         background: 'linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%) 0% 0% no-repeat padding-box padding-box transparent',
         borderRadius: '0px 0px 5px 5px',
         paddingLeft: '15px',
@@ -103,7 +103,7 @@ export default class Section2 extends Component {
                         <div style={sliderTxtTitleStyle}>LOREM IPSUM</div>
                         <p style={sliderTxtParagraphStyle}>20 Oct - 25 Nov</p>
                     </div>
-                </SwiperSlide>s
+                </SwiperSlide>
             </Swiper>
 
         <RoundedBtn containerStyle={roundedBtnStyle} BtnStyle={null} text="Voir tous les événements" />

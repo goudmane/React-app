@@ -34,12 +34,11 @@ const arrayOfObjects = [
             icon: {
                 position: 'relative',
                 right: '2px',
-                bottom: '0px'
             },
             txt:{
                 position: 'relative',
-                right: '6px',
-                bottom: '4px',
+                right: '8px',
+                bottom: '-2.2px'
             }
         }
     },{
@@ -48,8 +47,7 @@ const arrayOfObjects = [
         extra : {
             icon: {
                 position: 'relative',
-                right: '2px',
-                bottom: '0px'
+                right: '12.9px',
             },
             txt:{
                 position: 'relative',
@@ -63,8 +61,7 @@ const arrayOfObjects = [
         extra : {
             icon: {
                 position: 'relative',
-                right: '2px',
-                bottom: '0px'
+                right: '-18px',
             },
             txt:{
                 position: 'relative',
