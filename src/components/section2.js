@@ -35,7 +35,9 @@ export default class Section2 extends Component {
         fontWeight: '900',
         marginLeft: '20px'
     }
-
+    const roundedBtnStyle = {
+        margin: '50px 50px 42px 50px'
+    }
 
     return (
       <div id="section2">
@@ -53,7 +55,7 @@ export default class Section2 extends Component {
                 <SwiperSlide><img src={sliderImg} /></SwiperSlide>
             </Swiper>
 
-        <RoundedBtn containerStyle={{margin: '50px 50px 42px 50px;'}} BtnStyle={null} text="Voir tous les actualites" />
+        <RoundedBtn containerStyle={roundedBtnStyle} BtnStyle={null} text="Voir tous les événements" />
 
 
       </div>
