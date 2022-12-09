@@ -7,7 +7,7 @@ import RoundedBtn from "./roundedBtn";
 import { graphql, useStaticQuery } from 'gatsby'
 
 import sliderImg from '@images/s3.png';
-
+import _CSS from '@utils/style.js';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -69,24 +69,23 @@ const Section1 = ({ title }) => {
         opacity: '1'
     }
     const sliderBtnhStyle = {
+        width: '100%',
+        fontFamily: '\'Roboto\'',
+        fontWeight: '400',
+        fontSize: '18px',
         wordSpacing: '-3px',
-        position: 'absolute',
-        width: '145px',
-        height: '40px',
-        left: '0',
-        right: '0',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        top: '70.5px',
         background: '#FFFFFF 0% 0% no-repeat padding-box',
         borderRadius: '30px',
-        font: 'normal normal 500 18px/24px Roboto',
-        letterSpacing: '0.5px',
+        border: 'unset',
+        textAlign: 'center',
+        letterSpacing: '0.3px',
         color: '#303189',
         opacity: '1',
-        textAlign: 'center',
-        border: 'unset'
+        paddingLeft: '8px',
+        paddingTop: '8px',
+        height: '40px'
     }
+
     const data = useStaticQuery(graphql`
     query {
       site {
@@ -122,29 +121,16 @@ const Section1 = ({ title }) => {
                     <img src={sliderImg} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>D’ANFAPLACE ?</div>
-                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
+                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS</div>
                         <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni </p>
                         <p style={sliderTxtParagraphStyle}>oppressi pollicitos vivendi ob. </p>
                         <div>
                             <RoundedBtn marginStyle={sliderBtnhStyle} text="Je participe" />
-                            {/* x */} css.btn-small-promo */
+                            <RoundedBtn marginStyle={_CSS.btn.sliderBtnhStyle} text="100 points" />
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="section3Slider">
-                    <img src={sliderImg} rounded />
-                    <div style={sliderTxtConainerStyle}>
-                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
-                        <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni oppressi pollicitos vivendi ob.</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className="section3Slider">
-                    <img src={sliderImg} rounded />
-                    <div style={sliderTxtConainerStyle}>
-                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
-                        <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni oppressi pollicitos vivendi ob.</p>
-                    </div>
-                </SwiperSlide>
+
              </Swiper>
 
 
