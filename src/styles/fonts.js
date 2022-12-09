@@ -17,7 +17,7 @@ const RbNormalWeights = {
     400: [RbRegularTtf],
     500: [RbMediumTtf],
     700: [RbBoldTtf],
-    900: [RbBlackTtf],
+    800: [RbBlackTtf],
 };
 
 
