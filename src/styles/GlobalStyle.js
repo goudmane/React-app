@@ -176,7 +176,7 @@ const GlobalStyle = createGlobalStyle`
     }
     /* Section 2 */
     /* Section 3 */
-    #section1 .section1Swiper {
+    #section3 .section3Swiper {
         height:300px;
     }
     /* Section 3 */

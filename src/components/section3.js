@@ -114,11 +114,11 @@ const Section1 = ({ title }) => {
             <h3 style={h3style}>QUESTIONNAIRES</h3>
 
 
-            <Swiper className="section1Swiper"
+            <Swiper className="section3Swiper"
                     pagination={pagination}
                     modules={[Pagination]}
             >
-                <SwiperSlide className="section1Slider">
+                <SwiperSlide className="section3Slider">
                     <img src={sliderImg} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>D’ANFAPLACE ?</div>
@@ -131,14 +131,14 @@ const Section1 = ({ title }) => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="section1Slider">
+                <SwiperSlide className="section3Slider">
                     <img src={sliderImg} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
                         <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni oppressi pollicitos vivendi ob.</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="section1Slider">
+                <SwiperSlide className="section3Slider">
                     <img src={sliderImg} rounded />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS D’ANFAPLACE ?</div>
