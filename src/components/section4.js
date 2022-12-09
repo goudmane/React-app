@@ -26,7 +26,7 @@ export default class Section4 extends Component {
 
     const h3style = {
         marginBottom: '50px',
-        marginTop: '-12px',
+        marginTop: '58px',
         color: 'var(--main-bleu)',
         lineHeight: '33px',
         textAlign: 'center',
