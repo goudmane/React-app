@@ -83,6 +83,9 @@ const Section1 = ({ title }) => {
         letterSpacing: '-0.3px',
         marginRight: '5px'
     }
+    const roundedBtnStyle = {
+        margin: '35px 50px 52px 50px;'
+    }
     const data = useStaticQuery(graphql`
     query {
       site {
@@ -142,9 +145,9 @@ const Section1 = ({ title }) => {
                         <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
                     </div>
                 </SwiperSlide>
-             </Swiper>
+            </Swiper>
 
-        <RoundedBtn containerStyle={{margin: '35px 50px 52px 50px;'}} text="Voir tous les actualites" />
+        <RoundedBtn containerStyle={roundedBtnStyle} BtnStyle={} text="Voir tous les actualites" />
 
         </div>
     )
