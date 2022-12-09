@@ -127,7 +127,7 @@ const Section1 = ({ title }) => {
                         <p style={sliderTxtParagraphStyle}>oppressi pollicitos vivendi ob. </p>
                         <div>
                             <RoundedBtn marginStyle={sliderBtnhStyle} text="Je participe" />
-                            {/* <RoundedBtn marginStyle="" text="Je participe" />/* */} css.btn-small-promo */
+                            {/* x */} css.btn-small-promo */
                         </div>
                     </div>
                 </SwiperSlide>

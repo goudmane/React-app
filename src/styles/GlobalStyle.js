@@ -175,6 +175,11 @@ const GlobalStyle = createGlobalStyle`
         height: 262px;
     }
     /* Section 2 */
+    /* Section 3 */
+    #section1 .section1Swiper {
+        height:300px;
+    }
+    /* Section 3 */
     /* Section 4 */
     .col-6 {
         height: 82px;
