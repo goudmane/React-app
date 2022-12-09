@@ -200,7 +200,6 @@ const GlobalStyle = createGlobalStyle`
         background: #fff;
         border-radius: 50px;
         cursor: pointer;
-        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
         transition: all 0.3s ease-out;
         border-radius: 80px;
         background: transparent;
@@ -225,19 +224,19 @@ const GlobalStyle = createGlobalStyle`
         transition: all 0.3s ease-out 0s;;
       }
       .wrapper .button:nth-child(1):hover .icon{
-        background: #4267B2;
+        /* background: #4267B2; */
       }
       .wrapper .button:nth-child(2):hover .icon{
-        background: #1DA1F2;
+        /* background: #1DA1F2; */
       }
       .wrapper .button:nth-child(3):hover .icon{
-        background: #E1306C;
+        /* background: #E1306C; */
       }
       .wrapper .button:nth-child(4):hover .icon{
-        background: #333;
+        /* background: #333; */
       }
       .wrapper .button:nth-child(5):hover .icon{
-        background: #ff0000;
+        /* background: #ff0000; */
       }
       .wrapper .button .icon i{
         font-size: 25px;
