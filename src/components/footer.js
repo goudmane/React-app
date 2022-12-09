@@ -9,7 +9,7 @@ var style = {
     backgroundColor: 'rgb(248, 248, 248)',
     borderTop: '1px solid rgb(231, 231, 231)',
     textAlign: 'center',
-    padding: '13px 30px',
+    padding: '13px 44px',
     position: 'fixed',
     left: '0px',
     bottom: '0px',
@@ -30,15 +30,48 @@ const arrayOfObjects = [
     {
         txt : 'Accueil',
         iconName : 'Home',
-        extra : 'd-block'
+        extra : {
+            icon: {
+                position: 'relative',
+                right: '6px',
+                bottom: '4px',
+            },
+            txt:{
+                position: 'relative',
+                right: '2px',
+                bottom: '0px'
+            }
+        }
     },{
         txt : 'Mobilité',
         iconName : 'Car',
-        extra : 'd-flex'
+        extra : {
+            icon: {
+                position: 'relative',
+                right: '6px',
+                bottom: '4px',
+            },
+            txt:{
+                position: 'relative',
+                right: '2px',
+                bottom: '0px'
+            }
+        }
     },{
         txt : 'Profil',
         iconName : 'User',
-        extra : 'd-flex'
+        extra : {
+            icon: {
+                position: 'relative',
+                right: '6px',
+                bottom: '4px',
+            },
+            txt:{
+                position: 'relative',
+                right: '2px',
+                bottom: '0px'
+            }
+        }
     },
 ];
 
