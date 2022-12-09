@@ -247,11 +247,12 @@ const GlobalStyle = createGlobalStyle`
         color: #fff;
       }
       .wrapper .button span{
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 60px;
         margin-left: 10px;
-        transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out 0s;
+        text-align: left;
+        font: normal normal normal 14px/19px Roboto;
+        letter-spacing: 0px;
+        color: #303189;
       }
     /* Footer */
 `;
