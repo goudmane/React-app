@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Loader from '@components/loader'
 import Layout from '../components/layout'
 import Section1 from '@components/section1'
 import Section2 from '@components/section2'
@@ -12,25 +13,41 @@ import { GlobalStyle, theme } from '@styles';
 
 /* import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; */
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    if (isLoading) {
+      return;
+    }
 
+    if (location.hash) {
+      const id = location.hash.substring(1); // location.hash without the '#'
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView();
+          el.focus();
+        }
+      }, 0);
+    }
+
+  }, [isLoading]);
 const IndexPage = () => {
   return (
     <>
     <GlobalStyle />
-    <Layout pageTitle="Home Page">
-      {/* <p>I'm making this by following the Gatsby Tutorial.</p>
-      <StaticImage
-        alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
-        src="../images/clifford.jpg"
-      /> */}
-
-    </Layout>
-    <Section1 pageTitle="Home Page"/>
-    <Section2 />
-    <Section3 />
-    <Section4 />
-    <FooterBar />
+    {isLoading  ? (
+        <Loader finishLoading={() => setIsLoading(false)} />
+        ) : (
+            <>
+                <Layout pageTitle="Home Page" />
+                <Section1 pageTitle="Home Page"/>
+                <Section2 />
+                <Section3 />
+                <Section4 />
+                <FooterBar />
+            </>
+        )}
     </>
   )
 }
