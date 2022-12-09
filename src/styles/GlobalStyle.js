@@ -202,19 +202,26 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
         box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
         transition: all 0.3s ease-out;
+        border-radius: 80px;
+        background: rgba(48, 49, 137, 0.2);
+        color: rgb(48, 49, 137);
+        border: unset;
+        transform: scaleX(1);
+        position: relative;
+        right: 10px;
       }
       .wrapper .button:hover{
         width: 200px;
       }
       .wrapper .button .icon{
         display: inline-block;
-        height: 60px;
-        width: 60px;
+        height: 30px;
+        width: 30px;
         text-align: center;
         border-radius: 50px;
         box-sizing: border-box;
-        line-height: 60px;
-        transition: all 0.3s ease-out;
+        line-height: 36px;
+        transition: all 0.3s ease-out 0s;;
       }
       .wrapper .button:nth-child(1):hover .icon{
         background: #4267B2;
@@ -245,21 +252,6 @@ const GlobalStyle = createGlobalStyle`
         line-height: 60px;
         margin-left: 10px;
         transition: all 0.3s ease-out;
-      }
-      .wrapper .button:nth-child(1) span{
-        color: #4267B2;
-      }
-      .wrapper .button:nth-child(2) span{
-        color: #1DA1F2;
-      }
-      .wrapper .button:nth-child(3) span{
-        color: #E1306C;
-      }
-      .wrapper .button:nth-child(4) span{
-        color: #333;
-      }
-      .wrapper .button:nth-child(5) span{
-        color: #ff0000;
       }
     /* Footer */
 `;
