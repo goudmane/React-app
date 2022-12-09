@@ -49,11 +49,10 @@ const Section1 = ({ title }) => {
     const sliderTxtConainerStyle = {
         textAlign: 'center',
         position: 'relative',
-        bottom: '147px',
+        bottom: '180px',
         background: 'transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box',
-        borderRadius: '0px 0px 5px 5px',
-        opacity: '1',
-        paddingBottom: '80px'
+        borderRadius: '5px',
+        paddingBottom: '38px'
     }
     const sliderTxtTitleStyle = {
         letterSpacing: '0.5px',
@@ -68,22 +67,24 @@ const Section1 = ({ title }) => {
         color: '#FFFFFF',
         opacity: '1'
     }
-    const sliderBtnhStyle = {
-        width: '100%',
-        fontFamily: '\'Roboto\'',
-        fontWeight: '400',
-        fontSize: '18px',
+    const sliderBtnStyle = {
         wordSpacing: '-3px',
+        width: '146px',
+        height: '40px',
         background: '#FFFFFF 0% 0% no-repeat padding-box',
         borderRadius: '30px',
         border: 'unset',
-        textAlign: 'center',
-        letterSpacing: '0.3px',
+        font: 'normal normal 500 18px/24px Roboto',
+        letterSpacing: '0px',
         color: '#303189',
-        opacity: '1',
-        paddingLeft: '8px',
-        paddingTop: '8px',
-        height: '40px'
+        textAlign: 'center',
+        padding: '4px  6px  0px  0px'
+    }
+    const sliderBtnDivStyle = {
+        width: '100%',
+        textAlign: 'center',
+        height: '40px',
+        paddingTop: '2px'
     }
     const BtnSmallDiv = {
         wordSpacing: '-3px',
@@ -150,8 +151,8 @@ const Section1 = ({ title }) => {
                         <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS</div>
                         <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni </p>
                         <div>
-                            <RoundedBtn marginStyle={sliderBtnhStyle} text="Je participe" />
-                            <RoundedBtn marginStyle={BtnSmallDiv} text="100 points" />
+                            <RoundedBtn containerStyle={sliderBtnDivStyle} BtnStyle={sliderBtnStyle} text="Je participe" />
+                            <RoundedBtn containerStyle={BtnSmallDiv} BtnStyle={BtnSmall} text="100 points" />
                         </div>
                     </div>
                 </SwiperSlide>

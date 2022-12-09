@@ -3,7 +3,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 
-const BtnStyle = {
+const BtnStyleDefault = {
     borderRadius: '30px',
     width: '100%',
     background: 'var(--main-bleu)',
@@ -14,12 +14,10 @@ const BtnStyle = {
     textAlign: 'center',
     letterSpacing: '0.9px',
     wordSpacing: '-3px'
-
-
 }
-const RoundedBtn = ({marginStyle,text}) => (
+const RoundedBtn = ({containerStyle,BtnStyle = BtnStyleDefault,text}) => (
   <div>
-    <div style={marginStyle}>
+    <div style={containerStyle}>
         <Button style={BtnStyle}>{text}</Button>
     </div>
   </div>
