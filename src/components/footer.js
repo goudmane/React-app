@@ -6,22 +6,23 @@ import React, { Component } from "react";
 
 import FooterBtn from './footerBtn.js'
 var style = {
-    backgroundColor: "#F8F8F8",
-    borderTop: "1px solid #E7E7E7",
-    textAlign: "center",
-    padding: "16px 29px",
-    position: "fixed",
-    left: "0",
-    bottom: "0",
-    height: "67.5px",
-    width: "100%",
-    maxWidth : '414px',
-    borderTopLeftRadius:'80px',
-    borderTopRightRadius:'80px',
-    boxShadow: "0px -3px 6px 0px #0000000d",
+    backgroundColor: 'rgb(248, 248, 248)',
+    borderTop: '1px solid rgb(231, 231, 231)',
+    textAlign: 'center',
+    padding: '13px 30px',
+    position: 'fixed',
+    left: '0px',
+    bottom: '0px',
+    height: '67.5px',
+    width: '100%',
+    maxWidth: '414px',
+    borderTopLeftRadius: '80px',
+    borderTopRightRadius: '80px',
+    boxShadow: 'rgba(0, 0, 0, 0.05) 0px -3px 6px 0px',
     display: 'flex',
     zIndex: '1000',
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-between',
+    alignItems: 'center'
 }
 
 

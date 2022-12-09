@@ -67,7 +67,7 @@ const Section1 = ({ title }) => {
         background: 'transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box',
         paddingBottom: '13px',
         borderRadius: '0px 0px 5px 5px',
-        marginLeft: '4px'
+        paddingLeft: '4px'
     }
     const sliderTxtTitleStyle = {
         letterSpacing: '0.8px',
