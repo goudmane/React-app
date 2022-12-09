@@ -17,10 +17,10 @@ const BtnStyleDefault = {
 }
 
 const RoundedBtn = ({containerStyle , BtnStyle , text}) => (
-    BtnStyle = (BtnStyle == "" || BtnStyle == "null") ? BtnStyleDefault : BtnStyle;
+
   <div>
     <div style={containerStyle}>
-        <Button style={BtnStyle}>{text}</Button>
+        <Button style={BtnStyle ? BtnStyle : BtnStyleDefault }>{text}</Button>
     </div>
   </div>
 );
