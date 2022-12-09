@@ -49,7 +49,7 @@ const Section1 = ({ title }) => {
     const sliderTxtConainerStyle = {
         textAlign: 'center',
         position: 'relative',
-        bottom: '180px',
+        bottom: '179px',
         background: 'transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box',
         borderRadius: '5px',
         paddingBottom: '38px'
