@@ -1,4 +1,5 @@
-import * as React from 'react'
+import React, { useState, useEffect } from 'react';
+
 import Loader from '@components/loader'
 import Layout from '../components/layout'
 import Section1 from '@components/section1'
