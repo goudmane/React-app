@@ -85,9 +85,25 @@ export default class Section2 extends Component {
                         <p style={sliderTxtParagraphStyle}>20 Oct - 25 Nov</p>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide><img src={sliderImg} /></SwiperSlide>
-                <SwiperSlide><img src={sliderImg} /></SwiperSlide>
-                <SwiperSlide><img src={sliderImg} /></SwiperSlide>
+                <SwiperSlide>
+                    <img src={sliderImg} />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>LOREM IPSUM</div>
+                        <p style={sliderTxtParagraphStyle}>20 Oct - 25 Nov</p>
+                    </div>
+                </SwiperSlide><SwiperSlide>
+                    <img src={sliderImg} />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>LOREM IPSUM</div>
+                        <p style={sliderTxtParagraphStyle}>20 Oct - 25 Nov</p>
+                    </div>
+                </SwiperSlide><SwiperSlide>
+                    <img src={sliderImg} />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>LOREM IPSUM</div>
+                        <p style={sliderTxtParagraphStyle}>20 Oct - 25 Nov</p>
+                    </div>
+                </SwiperSlide>s
             </Swiper>
 
         <RoundedBtn containerStyle={roundedBtnStyle} BtnStyle={null} text="Voir tous les événements" />
