@@ -1,7 +1,6 @@
 
 import React, { Component } from "react";
 
-import "flickity/css/flickity.css";
 import RoundedBtn from "./roundedBtn";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -54,7 +53,8 @@ export default class Section2 extends Component {
                 <SwiperSlide><img src={sliderImg} /></SwiperSlide>
             </Swiper>
 
-        <RoundedBtn containerStyle={{margin: '50px 50px 42px 50px;'}} text="Voir tous les événements" />
+        <RoundedBtn containerStyle={{margin: '50px 50px 42px 50px;'}} BtnStyle={null} text="Voir tous les événements" />
+
       </div>
     );
   }

@@ -15,7 +15,7 @@ const BtnStyleDefault = {
     letterSpacing: '0.9px',
     wordSpacing: '-3px'
 }
-const RoundedBtn = ({containerStyle,BtnStyle = BtnStyleDefault,text}) => (
+const RoundedBtn = ({containerStyle , BtnStyle = BtnStyleDefault, text}) => (
   <div>
     <div style={containerStyle}>
         <Button style={BtnStyle}>{text}</Button>
