@@ -47,7 +47,12 @@ function FooterBar() {
 
     return (
         <>
-        <div style={style}>
+        {/* <div style={style}>
+
+        </div> */}
+
+        <div class="wrapper">
+
             {arrayOfObjects.map(({ txt, iconName, extra }) => (
                 <FooterBtn key={iconName} styleM={extra} iconName={iconName} txt={txt} />
             ))}

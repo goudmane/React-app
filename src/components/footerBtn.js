@@ -69,14 +69,18 @@ const FooterBtn = ({txt , iconName , styleM}) => {
     );
 }
  */
-
+//  <div className='d-inline-flex' onClick={handleToggle}>
+//          <span style={spanStyle}></span>{/* ${isActive ?  */}
+//          <Button style={btnStyle} className={`FooterBtn  ` + styleM} >
+//              {txt}
+//          </Button>
+//
+//      </div>
 
   return (
-    <div className='d-inline-flex' onClick={handleToggle}>
-        <span style={spanStyle}><Icon  name={iconName} /></span>{/* ${isActive ?  */}
-        <Button style={btnStyle} className={`FooterBtn  ` + styleM} >
-            {txt}
-        </Button>
+    <div class="button">
+        <div class="icon"><Icon  name={iconName} /></div>
+        <span>{txt}</span>
     </div>
   );
 };
