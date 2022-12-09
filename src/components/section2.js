@@ -79,7 +79,7 @@ export default class Section2 extends Component {
                     <img src={sliderImg} />
                     <div style={sliderTxtConainerStyle}>
                         <div style={sliderTxtTitleStyle}>LOREM IPSUM</div>
-                        <p style={sliderTxtParagraphStyle}>www.anfaplacemall.ma</p>
+                        <p style={sliderTxtParagraphStyle}>20 Oct - 25 Nov</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide><img src={sliderImg} /></SwiperSlide>
