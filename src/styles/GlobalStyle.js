@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
     ${variables};
     ${fonts};
 
+
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
     body {
         margin: 0px 20px;
         margin-bottom: 70px;
