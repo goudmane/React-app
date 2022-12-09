@@ -7,7 +7,7 @@ import RoundedBtn from "./roundedBtn";
 import { graphql, useStaticQuery } from 'gatsby'
 
 import sliderImg from '@images/s3.png';
-import _CSS from '@utils/style.js';
+//simport _CSS from '@utils/style.js';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -151,7 +151,7 @@ const Section1 = ({ title }) => {
                         <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni </p>
                         <div>
                             <RoundedBtn marginStyle={sliderBtnhStyle} text="Je participe" />
-                            <RoundedBtn marginStyle={_CSS.btn.sliderBtnhStyle} text="100 points" />
+                            <RoundedBtn marginStyle={BtnSmallDiv} text="100 points" />
                         </div>
                     </div>
                 </SwiperSlide>
