@@ -41,27 +41,30 @@ export default class Section2 extends Component {
 
 
     const sliderTxtConainerStyle = {
-        textAlign: 'center',
-        position: 'relative',
-        bottom: '83px',
-        background: 'transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box',
-        paddingBottom: '13px',
+        position: 'absolute',
+        bottom: '2px',
+        background: 'linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%) 0% 0% no-repeat padding-box padding-box transparent',
         borderRadius: '0px 0px 5px 5px',
-        paddingLeft: '4px'
+        paddingLeft: '15px',
+        width: 'inherit',
+        textAlign: 'left'
     }
     const sliderTxtTitleStyle = {
-        letterSpacing: '0.8px',
-        font: 'normal normal bold 25px/33px Roboto',
+        textAlign: 'left',
+        font: 'normal normal 900 22px/29px Roboto',
+        letterSpacing: '1.14px',
+        color: '#FFFFFF',
         textTransform: 'uppercase',
-        color: '#FFFFFF'
+        opacity: '1'
     }
     const sliderTxtParagraphStyle = {
-        textAlign: 'center',
-        font: 'normal normal normal 16px/21px Roboto',
+        marginRight: '5px',
+        textAlign: 'left',
+        font: 'normal normal normal 14px/19px Roboto',
+        letterSpacing: '0.28px',
         color: '#FFFFFF',
         opacity: '1',
-        letterSpacing: '-0.3px',
-        marginRight: '5px'
+        marginBottom: '11px'
     }
 
 
