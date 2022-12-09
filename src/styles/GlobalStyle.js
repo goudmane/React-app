@@ -192,7 +192,7 @@ const GlobalStyle = createGlobalStyle`
     /* Footer */
     .wrapper .button{
         display: inline-block;
-        height: 60px;
+        height: 37px;
         width: 60px;
         float: left;
         margin: 0 5px;
@@ -203,7 +203,7 @@ const GlobalStyle = createGlobalStyle`
         box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
         transition: all 0.3s ease-out;
         border-radius: 80px;
-        background: rgba(48, 49, 137, 0.2);
+        background: transparent;
         color: rgb(48, 49, 137);
         border: unset;
         transform: scaleX(1);
@@ -211,7 +211,8 @@ const GlobalStyle = createGlobalStyle`
         right: 10px;
       }
       .wrapper .button:hover{
-        width: 200px;
+        width: 104px;
+        background: rgba(48, 49, 137, 0.2);
       }
       .wrapper .button .icon{
         display: inline-block;
