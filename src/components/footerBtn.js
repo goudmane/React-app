@@ -53,7 +53,7 @@ const FooterBtn = ({txt , iconName , styleM}) => {
 
 
   return (
-    <div class="button" style={btnStyle}>
+    <div class="button" >
         <div class="icon"><Icon  name={iconName} /></div>
         <span>{txt}</span>
     </div>
