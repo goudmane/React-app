@@ -84,7 +84,7 @@ const Section1 = ({ title }) => {
         marginRight: '5px'
     }
     const roundedBtnStyle = {
-        margin: '35px 50px 52px 50px;'
+        margin: '35px 50px 52px 50px'
     }
     const data = useStaticQuery(graphql`
     query {
@@ -147,7 +147,7 @@ const Section1 = ({ title }) => {
                 </SwiperSlide>
             </Swiper>
 
-        <RoundedBtn containerStyle={roundedBtnStyle} text="Voir tous les actualites" />
+        <RoundedBtn containerStyle={roundedBtnStyle} BtnStyle={roundedBtnStyle} text="Voir tous les actualites" />
 
         </div>
     )
