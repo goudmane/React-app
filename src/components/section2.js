@@ -53,7 +53,8 @@ export default class Section2 extends Component {
                 <SwiperSlide><img src={sliderImg} /></SwiperSlide>
             </Swiper>
 
-        <RoundedBtn containerStyle={{margin: '50px 50px 42px 50px;'}} BtnStyle={null} text="Voir tous les événements" />
+        <RoundedBtn containerStyle={{margin: '50px 50px 42px 50px;'}} BtnStyle={null} text="Voir tous les actualites" />
+
 
       </div>
     );
