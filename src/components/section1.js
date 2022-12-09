@@ -147,7 +147,7 @@ const Section1 = ({ title }) => {
                 </SwiperSlide>
             </Swiper>
 
-        <RoundedBtn containerStyle={roundedBtnStyle} s text="Voir tous les actualites" />
+        <RoundedBtn containerStyle={roundedBtnStyle} text="Voir tous les actualites" />
 
         </div>
     )
