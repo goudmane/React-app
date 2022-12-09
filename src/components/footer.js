@@ -33,13 +33,13 @@ const arrayOfObjects = [
         extra : {
             icon: {
                 position: 'relative',
-                right: '6px',
-                bottom: '4px',
+                right: '2px',
+                bottom: '0px'
             },
             txt:{
                 position: 'relative',
-                right: '2px',
-                bottom: '0px'
+                right: '6px',
+                bottom: '4px',
             }
         }
     },{
@@ -48,13 +48,13 @@ const arrayOfObjects = [
         extra : {
             icon: {
                 position: 'relative',
-                right: '6px',
-                bottom: '4px',
+                right: '2px',
+                bottom: '0px'
             },
             txt:{
                 position: 'relative',
-                right: '2px',
-                bottom: '0px'
+                right: '6px',
+                bottom: '4px',
             }
         }
     },{
@@ -63,13 +63,13 @@ const arrayOfObjects = [
         extra : {
             icon: {
                 position: 'relative',
-                right: '6px',
-                bottom: '4px',
+                right: '2px',
+                bottom: '0px'
             },
             txt:{
                 position: 'relative',
-                right: '2px',
-                bottom: '0px'
+                right: '6px',
+                bottom: '4px',
             }
         }
     },
