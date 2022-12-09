@@ -41,4 +41,4 @@ const _CSS  = {
 
 }
 
-export default Seo
+export default _CSS
