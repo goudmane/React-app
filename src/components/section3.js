@@ -123,7 +123,6 @@ const Section1 = ({ title }) => {
                         <div style={sliderTxtTitleStyle}>D’ANFAPLACE ?</div>
                         <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS</div>
                         <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni </p>
-                        <p style={sliderTxtParagraphStyle}>oppressi pollicitos vivendi ob. </p>
                         <div>
                             <RoundedBtn marginStyle={sliderBtnhStyle} text="Je participe" />
                             <RoundedBtn marginStyle={_CSS.btn.sliderBtnhStyle} text="100 points" />
