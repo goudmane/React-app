@@ -12,8 +12,9 @@ import Seo from '../components/seo'
 import { GlobalStyle, theme } from '@styles';
 
 
-/* import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"; */
+
+const IndexPage = ({  location }) => {
+  const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -33,7 +34,7 @@ import "slick-carousel/slick/slick-theme.css"; */
     }
 
   }, [isLoading]);
-const IndexPage = () => {
+
   return (
     <>
     <GlobalStyle />
