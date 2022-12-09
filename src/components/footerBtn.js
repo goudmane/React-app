@@ -50,32 +50,7 @@ const FooterBtn = ({txt , iconName , styleM}) => {
     top: '3px'
  }
 
-/*  const btnAnimation = () => {
-    animation.current = anime.timeline({
-        easing: 'easeInOutQuad',
-        duration:500,
-    });
-    animation.current.add(
-        {
-            targets: `.FooterBtn`,
-            scaleX: [0,1] ,
-            visibility: ['hidden','visible']
-        }
-    ).add(
-        {
-            targets: `.FooterBtn > span`,
-            left: '0px',
-        }
-    );
-}
- */
-//  <div className='d-inline-flex' onClick={handleToggle}>
-//          <span style={spanStyle}></span>{/* ${isActive ?  */}
-//          <Button style={btnStyle} className={`FooterBtn  ` + styleM} >
-//              {txt}
-//          </Button>
-//
-//      </div>
+
 
   return (
     <div class="button">

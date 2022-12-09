@@ -47,10 +47,6 @@ function FooterBar() {
 
     return (
         <>
-        {/* <div style=>
-
-        </div> */}
-
         <div class={style+ "wrapper"} >
 
             {arrayOfObjects.map(({ txt, iconName, extra }) => (
