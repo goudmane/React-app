@@ -7,7 +7,7 @@ const style = {
     shapeRendering: 'auto'
 }
 const IconLoader = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style={style} width="271px" height="271px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style={style} width="271px" height="271px" viewBox="0 0 100 100" >
         <circle cx="50" cy="50" r="33" stroke-width="2" stroke="#303189" stroke-dasharray="51.83627878423159 51.83627878423159" fill="none" stroke-linecap="round">
             <animateTransform attributeName="transform" type="rotate" dur="1.3513513513513513s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50" />
         </circle>
