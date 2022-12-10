@@ -1,9 +1,6 @@
 import * as React from 'react'
-import anime from "animejs/lib/anime.es.js";
 import  { useState, useRef, useEffect} from "react";
-import Button from 'react-bootstrap/Button';
 import { Icon } from '@components/icons';
-const ticks = Array.from(Array(8));
 
 const FooterBtn = ({txt , iconName , styleM}) => {
   const [movment, setMovment] = useState(false);

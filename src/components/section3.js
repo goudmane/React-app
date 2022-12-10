@@ -156,6 +156,29 @@ const Section1 = ({ title }) => {
                         </div>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide className="section3Slider">
+                    <img src={sliderImg} rounded />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>D’ANFAPLACE ?</div>
+                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS</div>
+                        <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni </p>
+                        <div>
+                            <RoundedBtn containerStyle={sliderBtnDivStyle} BtnStyle={sliderBtnStyle} text="Je participe" />
+                            <RoundedBtn containerStyle={BtnSmallDiv} BtnStyle={BtnSmall} text="100 points" />
+                        </div>
+                    </div>
+                </SwiperSlide><SwiperSlide className="section3Slider">
+                    <img src={sliderImg} rounded />
+                    <div style={sliderTxtConainerStyle}>
+                        <div style={sliderTxtTitleStyle}>D’ANFAPLACE ?</div>
+                        <div style={sliderTxtTitleStyle}>QUE PENSEZ-VOUS</div>
+                        <p style={sliderTxtParagraphStyle}>Igitur nominum nominum ob epigonus molitioni </p>
+                        <div>
+                            <RoundedBtn containerStyle={sliderBtnDivStyle} BtnStyle={sliderBtnStyle} text="Je participe" />
+                            <RoundedBtn containerStyle={BtnSmallDiv} BtnStyle={BtnSmall} text="100 points" />
+                        </div>
+                    </div>
+                </SwiperSlide>
 
              </Swiper>
 

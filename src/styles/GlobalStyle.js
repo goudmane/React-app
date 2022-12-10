@@ -215,28 +215,13 @@ const GlobalStyle = createGlobalStyle`
       }
       .wrapper .button .icon{
         display: inline-block;
-        height: 30px;
+        height: 100%;
         width: 30px;
         text-align: center;
         border-radius: 50px;
         box-sizing: border-box;
         line-height: 36px;
         transition: all 0.3s ease-out 0s;;
-      }
-      .wrapper .button:nth-child(1):hover .icon{
-        /* background: #4267B2; */
-      }
-      .wrapper .button:nth-child(2):hover .icon{
-        /* background: #1DA1F2; */
-      }
-      .wrapper .button:nth-child(3):hover .icon{
-        /* background: #E1306C; */
-      }
-      .wrapper .button:nth-child(4):hover .icon{
-        /* background: #333; */
-      }
-      .wrapper .button:nth-child(5):hover .icon{
-        /* background: #ff0000; */
       }
       .wrapper .button .icon i{
         font-size: 25px;
