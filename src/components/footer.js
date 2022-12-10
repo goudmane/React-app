@@ -32,13 +32,18 @@ const arrayOfObjects = [
         iconName : 'Home',
         extra : {
             icon: {
+                top: '-1px',
                 position: 'relative',
-                right: '2px',
+                right: '1px'
             },
             txt:{
                 position: 'relative',
                 right: '8px',
                 bottom: '-2.2px'
+            },
+            btn:{
+                width: '104px',
+                background: 'rgba(48, 49, 137, 0.2)'
             }
         }
     },{
@@ -47,7 +52,7 @@ const arrayOfObjects = [
         extra : {
             icon: {
                 position: 'relative',
-                right: '12.9px',
+                right: '11.9px',
             },
             txt:{
                 position: 'relative',
